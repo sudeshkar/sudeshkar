@@ -67,14 +67,10 @@ Full-stack projects · Smart city solutions · Spring Boot–based backend syste
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sudeshkar&theme=dark&hide_border=true&include_all_commits=true&count_private=true" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudeshkar&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="160"/>
-</p>
+![](https://github-readme-stats.vercel.app/api?username=sudeshkar&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=sudeshkar&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=sudeshkar&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-<p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=sudeshkar&theme=dark&hide_border=true"/>
-</p>
 
 ---
 

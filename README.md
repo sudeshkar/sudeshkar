@@ -1,90 +1,180 @@
-<h1 align="center">Hi, I'm Sathieskumar Sudeshkar 👋</h1>
+<h1 align="center">Sathieskumar Sudeshkar</h1>
 
 <p align="center">
-  Backend developer focused on Java & Spring Boot — building clean, scalable APIs and real-world systems.<br/>
-  Currently exploring Machine Learning and microservices architecture.
+  <b>Junior Full Stack Software Engineer</b> · Sri Lanka 🇱🇰<br/>
+  Java · Spring Boot · C#/.NET · React &amp; TypeScript
+</p>
+
+<p align="center">
+  I build production-minded backends and the interfaces on top of them — clean architecture,<br/>
+  well-designed REST APIs, and code that other people can actually maintain.
+</p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/sathieskumar-sudeshkar">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:sudeshkar008sk@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://my-portfolio-v2-five-fawn.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+  </a>
+  <a href="https://medium.com/@sudeshkar008sk">
+    <img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20to-Graduate%20%26%20Junior%20SWE%20Roles-2ea44f?style=flat-square" alt="Open to work"/>
+  <img src="https://img.shields.io/badge/BSc%20(Hons)%20Software%20Engineering-Cardiff%20Met%20%C2%B7%202%3A1-informational?style=flat-square" alt="Degree"/>
 </p>
 
 ---
 
-## 🔭 What I'm working on
+### 👋 About
 
-**Smart Waste Management System** — RESTful APIs, JPA/Hibernate, layered backend architecture using Spring Boot
+BSc (Hons) Software Engineering graduate (Second Class Upper — Cardiff Metropolitan University, Dec 2025), currently a **Full Stack Developer Trainee at Variosystems**, building internal business tooling with Blazor WebAssembly and ASP.NET Core.
 
----
+Alongside that I contribute to **[OpenMRS](https://openmrs.org)** — an open-source electronic medical record platform deployed by health systems across 40+ countries. Working in a codebase that size taught me more about review standards, migrations, and micro-frontend architecture than any tutorial could.
 
-## 🌱 Currently learning
-
-Machine Learning fundamentals · Spring Boot best practices · System design for scalable applications
+I care about SOLID principles, layered architecture, and shipping code that survives contact with production.
 
 ---
 
-## 💬 Ask me about
+### 🌍 Open Source — OpenMRS
 
-Java · Spring Boot · MVC architecture · REST API design · JPA/Hibernate · Backend systems
+**4 merged pull requests** into the OpenMRS O3 frontend ecosystem (React + TypeScript micro-frontends):
+
+| PR | Repository | Contribution |
+| :--- | :--- | :--- |
+| [#1734](https://github.com/openmrs/openmrs-esm-core/pull/1734) | `openmrs-esm-core` | 🐛 **Bug fix** — corrected Login Location tag filtering in the `useLocationCount` hook |
+| [#2521](https://github.com/openmrs/openmrs-esm-patient-management/pull/2521) | `openmrs-esm-patient-management` | 🧹 Enforced strict-equality (`eqeqeq`) lint rule across the entire module |
+| [#250](https://github.com/openmrs/openmrs-esm-admin-tools/pull/250) | `openmrs-esm-admin-tools` | 📝 Documentation fix |
+| [#255](https://github.com/openmrs/openmrs-esm-template-app/pull/255) | `openmrs-esm-template-app` | 📝 Improved setup instructions for new contributors |
+
+> Working across federated modules also meant getting hands-on with **OAuth2 / JWT authentication flows** and the Carbon Design System.
 
 ---
 
-## 🛠️ Tech Stack
+### 🚀 Featured Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+**🐟 [FreshLink — B2B Backend](https://github.com/sudeshkar/FreshLink-Backend)**
+
+Spring Boot REST backend connecting fish suppliers to cafés in Kandy, with a demand–supply matching algorithm for daily distribution planning.
+
+`Java` `Spring Boot` `JPA` `MySQL`
+
+→ Layered architecture (Controller → Service → Repository), DTO patterns across 8+ endpoints, no JSON recursion.
+
+  </td>
+    <td width="50%" valign="top">
+
+**♻️ Smart Waste Management**
+[Backend](https://github.com/sudeshkar/wastemanagement) · [Frontend](https://github.com/sudeshkar/SMW_frontend)
+
+Full-stack waste collection platform built in an Agile team of 4 — scheduling, reporting and driver assignment.
+
+`Java` `Spring Boot` `React` `REST`
+
+→ 15+ RESTful endpoints, interface-based service contracts decoupling persistence from presentation.
+
+  </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+
+**🧠 [AI-Powered Focus Assistant](https://github.com/sudeshkar/AI-Powered-Focus-Assistant)**
+
+Desktop productivity app using Q-Table Reinforcement Learning to recommend personalised break schedules from 6 behaviour metrics.
+
+`C#` `WPF MVVM` `Python` `RL`
+
+→ Python Q-Learning model integrated with a C# backend via IPC, ~200ms per session cycle.
+
+  </td>
+    <td width="50%" valign="top">
+
+**💻 [Developer Portfolio](https://github.com/sudeshkar/My_portfolio_V2)**
+
+macOS-inspired personal portfolio built with React and Vite.
+
+`React` `Vite` `JavaScript`
+
+→ **[Live demo ↗](https://my-portfolio-v2-five-fawn.vercel.app)**
+
+  </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Tech Stack
 
 **Languages**
 
-![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![C#](https://img.shields.io/badge/C%23-%23239120.svg?style=flat-square&logo=csharp&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=flat-square&logo=php&logoColor=white)
 
-**Frameworks & Tools**
+**Frameworks**
 
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%236DB33F.svg?style=flat-square&logo=spring&logoColor=white)
-![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB)
-![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![Apache Tomcat](https://img.shields.io/badge/Tomcat-%23F8DC75.svg?style=flat-square&logo=apache-tomcat&logoColor=black)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![.NET](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Blazor](https://img.shields.io/badge/Blazor%20WASM-512BD4?style=flat-square&logo=blazor&logoColor=white)
+![React](https://img.shields.io/badge/React-20232a?style=flat-square&logo=react&logoColor=61DAFB)
 
 **Databases**
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoft%20sql%20server&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
 
-**Data & ML**
+**Tools & Practices**
 
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+
+`REST API Design` · `JWT & OAuth2` · `SOLID Principles` · `DTO Patterns` · `Clean Architecture` · `Agile / Scrum`
+
+<sub>Also explored: Pandas, NumPy, scikit-learn and XGBoost through ML side projects — [personality prediction](https://github.com/sudeshkar/introvert-extrovert-prediction) · [Titanic survival](https://github.com/sudeshkar/Titanic-Servival-Prediction-Model)</sub>
 
 ---
 
-## 👯 Open to collaborating on
+### 💼 Experience
 
-Full-stack projects · Smart city solutions · Spring Boot–based backend systems · Backend-heavy applications
+**Full Stack Software Developer Trainee** — *Variosystems* · 2025 – Present
+- Building internal workspace tooling with **Blazor .NET WebAssembly**, using component-based architecture and MVVM — streamlining 3+ internal workflows.
+- Delivering features end-to-end, from Blazor UI components through to **ASP.NET Core** backend logic.
+- Improved UI responsiveness through WebAssembly lazy-loading; shipped 2 feature modules on schedule across Agile sprints.
 
 ---
 
-## 📊 GitHub Stats
+### ✍️ Writing
+
+📄 **[Building a Serverless REST API with Google Apps Script and Google Sheets](https://medium.com/@sudeshkar008sk)** — on serverless architecture, REST design, and GCP integration.
+
+---
+
+### 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=sudeshkar&theme=dark&hide_border=true" alt="GitHub Streak"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sudeshkar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudeshkar&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="Top Languages"/>
 </p>
+
+---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sudeshkar&show_icons=true&theme=dark&hide_border=true&count_private=true" height="160" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudeshkar&theme=dark&hide_border=true&count_private=true&layout=compact" height="160" alt="Top Languages"/>
+  <b>Currently open to Graduate / Junior Software Engineer roles — remote or Sri Lanka based.</b><br/>
+  <a href="mailto:sudeshkar008sk@gmail.com">sudeshkar008sk@gmail.com</a> · <a href="https://linkedin.com/in/sathieskumar-sudeshkar">LinkedIn</a>
 </p>
-
----
-
-## 🌐 Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sathieskumar-sudeshkar)
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=flat-square&logo=Facebook&logoColor=white)](https://facebook.com/sk.sudesh.7927)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/sk_sudesh_)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sudeshkar008sk@gmail.com)
-
----
-
-> *If a project uses Spring Boot, I'm instantly interested.* 🚀

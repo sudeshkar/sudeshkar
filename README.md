@@ -168,8 +168,21 @@ macOS-inspired personal portfolio built with React and Vite.
 ### 📊 GitHub Activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=sudeshkar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudeshkar&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="Top Languages"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sudeshkar&theme=github_dark"/>
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sudeshkar&theme=default" alt="GitHub profile summary"/>
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sudeshkar&theme=github_dark"/>
+    <img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sudeshkar&theme=default" alt="Top languages by repository"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sudeshkar&theme=github_dark"/>
+    <img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sudeshkar&theme=default" alt="Most used languages by commit"/>
+  </picture>
 </p>
 
 ---

@@ -1,7 +1,7 @@
 <h1 align="center">Sathieskumar Sudeshkar</h1>
 
 <p align="center">
-  <b>Junior Full Stack Software Engineer</b> · Sri Lanka 🇱🇰<br/>
+  <b> Full Stack Software Engineer</b> · Sri Lanka 🇱🇰<br/>
   Java · Spring Boot · C#/.NET · React &amp; TypeScript
 </p>
 
@@ -188,6 +188,6 @@ macOS-inspired personal portfolio built with React and Vite.
 ---
 
 <p align="center">
-  <b>Currently open to Graduate / Junior Software Engineer roles — remote or Sri Lanka based.</b><br/>
+  <b>Currently open to Graduate / Full Stack Software Engineer roles — remote or Sri Lanka based.</b><br/>
   <a href="mailto:sudeshkar008sk@gmail.com">sudeshkar008sk@gmail.com</a> · <a href="https://linkedin.com/in/sathieskumar-sudeshkar">LinkedIn</a>
 </p>

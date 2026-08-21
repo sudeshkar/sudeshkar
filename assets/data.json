@@ -1,8 +1,8 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-08-21T19:59:27.008Z",
- "followers": 1,
+ "generatedAt": "2026-08-21T20:08:14.383Z",
+ "followers": 2,
  "repoCount": 17,
  "stars": 0,
  "forks": 0,
@@ -1933,52 +1933,52 @@
    "name": "Java",
    "size": 856529,
    "color": "#b07219",
-   "pct": 42.62424060258135
+   "pct": 41.844281035533946
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#178600",
-   "pct": 21.02321586394146
+   "pct": 20.638522597589382
   },
   {
    "name": "JavaScript",
-   "size": 321821,
+   "size": 359277,
    "color": "#f1e05a",
-   "pct": 16.015074486635402
+   "pct": 17.551872449856955
   },
   {
    "name": "TypeScript",
    "size": 289512,
    "color": "#3178c6",
-   "pct": 14.407251996528469
+   "pct": 14.143620929541795
   },
   {
    "name": "CSS",
    "size": 83382,
    "color": "#663399",
-   "pct": 4.149415174412587
+   "pct": 4.0734871105413735
   },
   {
    "name": "Python",
    "size": 16915,
    "color": "#3572A5",
-   "pct": 0.8417567061858543
+   "pct": 0.8263538230650178
   },
   {
    "name": "HTML",
    "size": 16789,
    "color": "#e34c26",
-   "pct": 0.8354864522704292
+   "pct": 0.8201983053762096
   },
   {
    "name": "Dockerfile",
    "size": 2081,
    "color": "#384d54",
-   "pct": 0.10355871744444356
+   "pct": 0.10166374849531788
   }
  ],
- "langBytes": 2009488,
+ "langBytes": 2046944,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

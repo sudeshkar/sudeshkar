@@ -78,7 +78,7 @@
     <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#d29922" style="animation-delay:0.58s"/>
     <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">8</text>
     <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#d29922">Languages</text>
-    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">Java 43%</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">Java 42%</text>
   </g></g>
   <rect x="0.5" y="0.5" width="999" height="235" rx="14" fill="none" stroke="#26303b"/>
 </g>

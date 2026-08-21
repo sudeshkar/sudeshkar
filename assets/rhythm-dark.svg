@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="238" viewBox="0 0 480 238" role="img" aria-label="Contributions by weekday">
+<title>Contribution rhythm — busiest on Mon</title>
+<defs>
+  <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#010409"/></linearGradient>
+  <radialGradient id="rglow"><stop offset="0%" stop-color="#818cf8" stop-opacity="0.25"/><stop offset="100%" stop-color="#818cf8" stop-opacity="0"/></radialGradient>
+  <pattern id="rdots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r="1.2" fill="#ffffff" fill-opacity="0.045"/></pattern>
+  <clipPath id="rframe"><rect width="480" height="238" rx="14"/></clipPath>
+  <style>
+    
+  @keyframes rise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes fade { from { opacity:0; } to { opacity:1; } }
+  @keyframes drift { 0%,100% { transform:translate(0,0); } 50% { transform:translate(18px,-12px); } }
+  @keyframes drift2 { 0%,100% { transform:translate(0,0); } 50% { transform:translate(-22px,14px); } }
+  @keyframes sweep { 0% { transform:translateX(-100%); } 100% { transform:translateX(100%); } }
+  @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+  @keyframes spinBack { from { transform:rotate(360deg); } to { transform:rotate(0deg); } }
+  @keyframes pulse { 0%,100% { opacity:.35; r:4; } 50% { opacity:1; r:5.5; } }
+  @keyframes dash { to { stroke-dashoffset:0; } }
+  .rise { opacity:0; animation:rise .7s cubic-bezier(.22,.8,.3,1) forwards; }
+  .fade { opacity:0; animation:fade .8s ease forwards; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration:.001s !important; animation-delay:0s !important; }
+    .rise, .fade { opacity:1; }
+  }
+
+    @keyframes growLine { to { stroke-dashoffset:0; } }
+    @keyframes growX { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+    .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif; } .m { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; }
+    .spoke { animation:growLine .95s cubic-bezier(.22,.8,.3,1) forwards; }
+    .rglow { animation:drift 16s ease-in-out infinite; }
+    .guide { animation:spin 60s linear infinite; transform-origin:116px 138px; }
+  </style>
+</defs>
+<g clip-path="url(#rframe)">
+  <rect width="480" height="238" fill="url(#rbg)"/>
+  <ellipse class="rglow" cx="116" cy="138" rx="190" ry="150" fill="url(#rglow)"/>
+  <rect width="480" height="238" fill="url(#rdots)"/>
+
+  <text class="t" x="22" y="34" font-size="14" font-weight="700" fill="#e6edf3">Weekly rhythm</text>
+  <text class="m" x="458" y="34" text-anchor="end" font-size="10" letter-spacing="1.2" fill="#586069">LAST 12 MONTHS</text>
+  <rect x="22" y="46" width="436" height="1" fill="#1c242d"/>
+
+  <g class="guide" opacity="0.6">
+    <circle cx="116" cy="138" r="38" fill="none" stroke="#26303b" stroke-width="1" stroke-dasharray="2 6"/>
+    <circle cx="116" cy="138" r="54" fill="none" stroke="#26303b" stroke-width="1" stroke-dasharray="2 6"/>
+    <circle cx="116" cy="138" r="70" fill="none" stroke="#26303b" stroke-width="1" stroke-dasharray="2 6"/>
+  </g>
+  <line class="spoke" x1="116.0" y1="112.0" x2="116.0" y2="91.2"
+    stroke="#22d3ee" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="20.8" stroke-dashoffset="20.8" style="animation-delay:0.12s"/>
+  <line class="spoke" x1="136.3" y1="121.8" x2="173.9" y2="91.9"
+    stroke="#a78bfa" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="48.0" stroke-dashoffset="48.0" style="animation-delay:0.19s"/>
+  <line class="spoke" x1="141.3" y1="143.8" x2="155.3" y2="147.0"
+    stroke="#22d3ee" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="14.3" stroke-dashoffset="14.3" style="animation-delay:0.26s"/>
+  <line class="spoke" x1="127.3" y1="161.4" x2="147.5" y2="203.5"
+    stroke="#a78bfa" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="46.7" stroke-dashoffset="46.7" style="animation-delay:0.33s"/>
+  <line class="spoke" x1="104.7" y1="161.4" x2="86.7" y2="198.8"
+    stroke="#818cf8" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="41.5" stroke-dashoffset="41.5" style="animation-delay:0.40s"/>
+  <line class="spoke" x1="90.7" y1="143.8" x2="57.8" y2="151.3"
+    stroke="#818cf8" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="33.7" stroke-dashoffset="33.7" style="animation-delay:0.47s"/>
+  <line class="spoke" x1="95.7" y1="121.8" x2="88.6" y2="116.1"
+    stroke="#22d3ee" stroke-width="15" stroke-linecap="round"
+    stroke-dasharray="9.1" stroke-dashoffset="9.1" style="animation-delay:0.54s"/>
+  <text class="m fade" x="116.0" y="53.5" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">S</text>
+  <text class="m fade" x="184.8" y="86.6" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">M</text>
+  <text class="m fade" x="201.8" y="161.1" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">T</text>
+  <text class="m fade" x="154.2" y="220.8" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">W</text>
+  <text class="m fade" x="77.8" y="220.8" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">T</text>
+  <text class="m fade" x="30.2" y="161.1" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">F</text>
+  <text class="m fade" x="47.2" y="86.6" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">S</text>
+  <circle cx="116" cy="138" r="19" fill="#161b22" stroke="#26303b"/>
+  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" style="animation-delay:.9s">165</text>
+  <text class="m fade" x="116" y="150" text-anchor="middle" font-size="7.5" letter-spacing="0.6" fill="#8b949e" style="animation-delay:.9s">TOTAL</text>
+
+  <g class="rise" style="animation-delay:0.20s">
+    <text class="m" x="232" y="76" font-size="10.5" font-weight="400" fill="#8b949e">Sun</text>
+    <rect x="264" y="68" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="68" width="77.8" height="7" rx="3.5" fill="#22d3ee"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.28s"/>
+    <text class="m" x="458" y="76" text-anchor="end" font-size="10" fill="#586069">16</text>
+  </g>
+  <g class="rise" style="animation-delay:0.25s">
+    <text class="m" x="232" y="98" font-size="10.5" font-weight="700" fill="#e6edf3">Mon</text>
+    <rect x="264" y="90" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="90" width="180.0" height="7" rx="3.5" fill="#a78bfa"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.33s"/>
+    <text class="m" x="458" y="98" text-anchor="end" font-size="10" fill="#586069">37</text>
+  </g>
+  <g class="rise" style="animation-delay:0.30s">
+    <text class="m" x="232" y="120" font-size="10.5" font-weight="400" fill="#8b949e">Tue</text>
+    <rect x="264" y="112" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="112" width="53.5" height="7" rx="3.5" fill="#22d3ee"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.38s"/>
+    <text class="m" x="458" y="120" text-anchor="end" font-size="10" fill="#586069">11</text>
+  </g>
+  <g class="rise" style="animation-delay:0.35s">
+    <text class="m" x="232" y="142" font-size="10.5" font-weight="400" fill="#8b949e">Wed</text>
+    <rect x="264" y="134" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="134" width="175.1" height="7" rx="3.5" fill="#a78bfa"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.43s"/>
+    <text class="m" x="458" y="142" text-anchor="end" font-size="10" fill="#586069">36</text>
+  </g>
+  <g class="rise" style="animation-delay:0.40s">
+    <text class="m" x="232" y="164" font-size="10.5" font-weight="400" fill="#8b949e">Thu</text>
+    <rect x="264" y="156" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="156" width="155.7" height="7" rx="3.5" fill="#818cf8"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.48s"/>
+    <text class="m" x="458" y="164" text-anchor="end" font-size="10" fill="#586069">32</text>
+  </g>
+  <g class="rise" style="animation-delay:0.45s">
+    <text class="m" x="232" y="186" font-size="10.5" font-weight="400" fill="#8b949e">Fri</text>
+    <rect x="264" y="178" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="178" width="126.5" height="7" rx="3.5" fill="#818cf8"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.53s"/>
+    <text class="m" x="458" y="186" text-anchor="end" font-size="10" fill="#586069">26</text>
+  </g>
+  <g class="rise" style="animation-delay:0.50s">
+    <text class="m" x="232" y="208" font-size="10.5" font-weight="400" fill="#8b949e">Sat</text>
+    <rect x="264" y="200" width="180.0" height="7" rx="3.5" fill="#161b22"/>
+    <rect x="264" y="200" width="34.1" height="7" rx="3.5" fill="#22d3ee"
+      style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.58s"/>
+    <text class="m" x="458" y="208" text-anchor="end" font-size="10" fill="#586069">7</text>
+  </g>
+  <rect x="0.5" y="0.5" width="479" height="237" rx="14" fill="none" stroke="#26303b"/>
+</g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="236" viewBox="0 0 1000 236" role="img" aria-label="GitHub activity summary for sudeshkar">
+<title>GitHub activity — 211 contributions, 6 merged pull requests</title>
+<defs>
+  <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#010409"/></linearGradient>
+  <radialGradient id="sglow"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.275"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+  <pattern id="sdots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r="1.2" fill="#ffffff" fill-opacity="0.045"/></pattern>
+  <clipPath id="sframe"><rect width="1000" height="236" rx="14"/></clipPath>
+  <style>
+    
+  @keyframes rise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes fade { from { opacity:0; } to { opacity:1; } }
+  @keyframes drift { 0%,100% { transform:translate(0,0); } 50% { transform:translate(18px,-12px); } }
+  @keyframes drift2 { 0%,100% { transform:translate(0,0); } 50% { transform:translate(-22px,14px); } }
+  @keyframes sweep { 0% { transform:translateX(-100%); } 100% { transform:translateX(100%); } }
+  @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+  @keyframes spinBack { from { transform:rotate(360deg); } to { transform:rotate(0deg); } }
+  @keyframes pulse { 0%,100% { opacity:.35; r:4; } 50% { opacity:1; r:5.5; } }
+  @keyframes dash { to { stroke-dashoffset:0; } }
+  .rise { opacity:0; animation:rise .7s cubic-bezier(.22,.8,.3,1) forwards; }
+  .fade { opacity:0; animation:fade .8s ease forwards; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration:.001s !important; animation-delay:0s !important; }
+    .rise, .fade { opacity:1; }
+  }
+
+    @keyframes grow { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+    .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif; } .m { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; }
+    .bar { transform-origin:left center; animation:grow .9s cubic-bezier(.22,.8,.3,1) forwards; transform:scaleX(0); }
+    .sglow { animation:drift2 21s ease-in-out infinite; }
+  </style>
+</defs>
+<g clip-path="url(#sframe)">
+  <rect width="1000" height="236" fill="url(#sbg)"/>
+  <ellipse class="sglow" cx="940" cy="20" rx="300" ry="170" fill="url(#sglow)"/>
+  <rect width="1000" height="236" fill="url(#sdots)"/>
+
+  <text class="t" x="24" y="38" font-size="15" font-weight="700" fill="#e6edf3">Engineering activity</text>
+  <text class="m" x="976" y="38" text-anchor="end" font-size="10.5" letter-spacing="1.4" fill="#586069">SELF-HOSTED · 2026-08-21</text>
+  <rect x="24" y="52" width="952" height="1" fill="#1c242d"/>
+
+  <g transform="translate(24.0,72)"><g class="rise" style="animation-delay:0.08s">
+    <rect width="147.0" height="132" rx="11" fill="#0f141b" stroke="#26303b"/>
+    <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#22d3ee" style="animation-delay:0.23s"/>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">211</text>
+    <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#22d3ee">Contributions</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">all time</text>
+  </g></g>
+  <g transform="translate(185.0,72)"><g class="rise" style="animation-delay:0.15s">
+    <rect width="147.0" height="132" rx="11" fill="#0f141b" stroke="#26303b"/>
+    <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#818cf8" style="animation-delay:0.30s"/>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">124</text>
+    <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#818cf8">Commits</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">last 12 months</text>
+  </g></g>
+  <g transform="translate(346.0,72)"><g class="rise" style="animation-delay:0.22s">
+    <rect width="147.0" height="132" rx="11" fill="#0f141b" stroke="#26303b"/>
+    <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#a78bfa" style="animation-delay:0.37s"/>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">6</text>
+    <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#a78bfa">Merged PRs</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">6 upstream</text>
+  </g></g>
+  <g transform="translate(507.0,72)"><g class="rise" style="animation-delay:0.29s">
+    <rect width="147.0" height="132" rx="11" fill="#0f141b" stroke="#26303b"/>
+    <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#22d3ee" style="animation-delay:0.44s"/>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">19</text>
+    <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#22d3ee">Repositories</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">17 active</text>
+  </g></g>
+  <g transform="translate(668.0,72)"><g class="rise" style="animation-delay:0.36s">
+    <rect width="147.0" height="132" rx="11" fill="#0f141b" stroke="#26303b"/>
+    <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#3fb950" style="animation-delay:0.51s"/>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">18</text>
+    <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#3fb950">Active weeks</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">of 53</text>
+  </g></g>
+  <g transform="translate(829.0,72)"><g class="rise" style="animation-delay:0.43s">
+    <rect width="147.0" height="132" rx="11" fill="#0f141b" stroke="#26303b"/>
+    <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#d29922" style="animation-delay:0.58s"/>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">8</text>
+    <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#d29922">Languages</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#8b949e">Java 42%</text>
+  </g></g>
+  <rect x="0.5" y="0.5" width="999" height="235" rx="14" fill="none" stroke="#26303b"/>
+</g>
+</svg>

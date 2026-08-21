@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Sathieskumar Sudeshkar — Full-Stack Software Engineer">
+<title>Sathieskumar Sudeshkar — Full-Stack Software Engineer</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#f6f8fa"/>
+  </linearGradient>
+  <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0b0d10"/>
+    <stop offset="62%" stop-color="#0e7490"/>
+    <stop offset="100%" stop-color="#6d28d9"/>
+  </linearGradient>
+  <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0e7490" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#0e7490"/>
+    <stop offset="70%" stop-color="#6d28d9"/>
+    <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="glowA"><stop offset="0%" stop-color="#0e7490" stop-opacity="0.16"/><stop offset="100%" stop-color="#0e7490" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB"><stop offset="0%" stop-color="#6d28d9" stop-opacity="0.16"/><stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="1.4" cy="1.4" r="1.4" fill="#1f2328" fill-opacity="0.05"/>
+  </pattern>
+  <clipPath id="frame"><rect width="1000" height="300" rx="14"/></clipPath>
+  <style>
+    
+  @keyframes rise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes fade { from { opacity:0; } to { opacity:1; } }
+  @keyframes drift { 0%,100% { transform:translate(0,0); } 50% { transform:translate(18px,-12px); } }
+  @keyframes drift2 { 0%,100% { transform:translate(0,0); } 50% { transform:translate(-22px,14px); } }
+  @keyframes sweep { 0% { transform:translateX(-100%); } 100% { transform:translateX(100%); } }
+  @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+  @keyframes spinBack { from { transform:rotate(360deg); } to { transform:rotate(0deg); } }
+  @keyframes pulse { 0%,100% { opacity:.35; r:4; } 50% { opacity:1; r:5.5; } }
+  @keyframes dash { to { stroke-dashoffset:0; } }
+  .rise { opacity:0; animation:rise .7s cubic-bezier(.22,.8,.3,1) forwards; }
+  .fade { opacity:0; animation:fade .8s ease forwards; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration:.001s !important; animation-delay:0s !important; }
+    .rise, .fade { opacity:1; }
+  }
+
+    
+  @keyframes roleCycle {
+    0% { opacity:0; transform:translateY(7px); }
+    1.20% { opacity:1; transform:translateY(0); }
+    16.80% { opacity:1; transform:translateY(0); }
+    18.80% { opacity:0; transform:translateY(-7px); }
+    100% { opacity:0; transform:translateY(-7px); }
+  }
+  .role { opacity:0; animation:roleCycle 14s linear infinite; }
+    .t { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif; }
+    .m { font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace; }
+    .glowA { animation:drift 15s ease-in-out infinite; }
+    .glowB { animation:drift2 19s ease-in-out infinite; }
+    .sweepline { animation:sweep 6.5s cubic-bezier(.4,0,.2,1) infinite; }
+    .dot { animation:pulse 2.4s ease-in-out infinite; }
+  </style>
+</defs>
+<g clip-path="url(#frame)">
+  <rect width="1000" height="300" fill="url(#bg)"/>
+  <ellipse class="glowA" cx="140" cy="46" rx="330" ry="200" fill="url(#glowA)"/>
+  <ellipse class="glowB" cx="880" cy="268" rx="340" ry="210" fill="url(#glowB)"/>
+  <rect width="1000" height="300" fill="url(#dots)"/>
+
+  <g opacity="0.9">
+    <circle cx="838" cy="150" r="74" fill="none"
+      stroke="#0e7490" stroke-opacity="0.55" stroke-width="1.25" stroke-dasharray="3 9"
+      style="animation:spin 26s linear infinite; transform-origin:838px 150px;"/>
+    <circle cx="838" cy="150" r="58" fill="none"
+      stroke="#6d28d9" stroke-opacity="0.5" stroke-width="1.25" stroke-dasharray="2 7"
+      style="animation:spinBack 18s linear infinite; transform-origin:838px 150px;"/>
+    <circle cx="838" cy="150" r="92" fill="none"
+      stroke="#4338ca" stroke-opacity="0.35" stroke-width="1.25" stroke-dasharray="1 14"
+      style="animation:spin 40s linear infinite; transform-origin:838px 150px;"/>
+    <g style="animation:spin 26s linear infinite; transform-origin:838px 150px;">
+      <circle cx="912" cy="150" r="4" fill="#0e7490"/>
+    </g>
+    <g style="animation:spinBack 18s linear infinite; transform-origin:838px 150px;">
+      <circle cx="780" cy="150" r="3.2" fill="#6d28d9"/>
+    </g>
+    <circle cx="838" cy="150" r="42" fill="#f6f8fa" fill-opacity="0.85" stroke="#d0d7de"/>
+    <text class="t" x="838" y="161" text-anchor="middle" font-size="30" font-weight="700" fill="url(#name)" letter-spacing="1">SS</text>
+  </g>
+
+  <g class="rise" style="animation-delay:.05s">
+    <text class="m" x="56" y="72" font-size="11.5" letter-spacing="3.4" fill="#59636e">FULL-STACK SOFTWARE ENGINEER — SRI LANKA</text>
+  </g>
+  <g class="rise" style="animation-delay:.16s">
+    <text class="t" x="56" y="126" font-size="42" font-weight="800" fill="url(#name)" letter-spacing="-0.8">Sathieskumar Sudeshkar</text>
+  </g>
+  <g class="rise" style="animation-delay:.28s">
+    <text class="t" x="56" y="162" font-size="17" font-weight="500" fill="#1f2328">I build backends that survive production.</text>
+  </g>
+
+  <g transform="translate(56,200)">
+    <rect x="0" y="-13" width="3" height="18" rx="1.5" fill="#0e7490"/>
+    <text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="#0e7490" style="animation-delay:0.0s">Spring Boot &amp; Java 21</text>
+    <text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="#0e7490" style="animation-delay:2.8s">C# / .NET &amp; Blazor WASM</text>
+    <text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="#0e7490" style="animation-delay:5.6s">React &amp; TypeScript</text>
+    <text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="#0e7490" style="animation-delay:8.4s">REST APIs that hold up</text>
+    <text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="#0e7490" style="animation-delay:11.2s">OpenMRS contributor</text>
+  </g>
+
+  <g transform="translate(56,232)">
+    <g class="rise" style="animation-delay:.44s">
+      <rect width="238" height="30" rx="15" fill="#f6f8fa" fill-opacity="0.9" stroke="#d0d7de"/>
+      <circle class="dot" cx="18" cy="15" r="4.5" fill="#1a7f37"/>
+      <text class="t" x="32" y="19.5" font-size="12.5" font-weight="600" fill="#1f2328">Open to graduate &amp; junior SWE roles</text>
+    </g>
+  </g>
+
+  <rect x="0" y="297" width="1000" height="3" fill="#e4e8ed"/>
+  <rect class="sweepline" x="0" y="297" width="1000" height="3" fill="url(#rule)"/>
+  <rect x="0.5" y="0.5" width="999" height="299" rx="14" fill="none" stroke="#d0d7de"/>
+</g>
+</svg>

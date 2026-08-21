@@ -1,0 +1,3 @@
+# The card pipeline runs on Linux; keep LF so scheduled runs do not churn every file.
+* text=auto eol=lf
+*.svg text eol=lf

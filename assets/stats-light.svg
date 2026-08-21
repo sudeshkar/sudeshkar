@@ -62,14 +62,14 @@
   <g transform="translate(507.0,72)"><g class="rise" style="animation-delay:0.29s">
     <rect width="147.0" height="132" rx="11" fill="#ffffff" stroke="#d0d7de"/>
     <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#0e7490" style="animation-delay:0.44s"/>
-    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#0b0d10" letter-spacing="-1">19</text>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#0b0d10" letter-spacing="-1">17</text>
     <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#0e7490">Repositories</text>
     <text class="m" x="16" y="108" font-size="10.5" fill="#59636e">17 active</text>
   </g></g>
   <g transform="translate(668.0,72)"><g class="rise" style="animation-delay:0.36s">
     <rect width="147.0" height="132" rx="11" fill="#ffffff" stroke="#d0d7de"/>
     <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#1a7f37" style="animation-delay:0.51s"/>
-    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#0b0d10" letter-spacing="-1">18</text>
+    <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#0b0d10" letter-spacing="-1">19</text>
     <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#1a7f37">Active weeks</text>
     <text class="m" x="16" y="108" font-size="10.5" fill="#59636e">of 53</text>
   </g></g>
@@ -78,7 +78,7 @@
     <rect class="bar" x="0" y="0" width="147.0" height="2.5" rx="1.25" fill="#9a6700" style="animation-delay:0.58s"/>
     <text class="t" x="16" y="62" font-size="34" font-weight="800" fill="#0b0d10" letter-spacing="-1">8</text>
     <text class="t" x="16" y="88" font-size="12.5" font-weight="600" fill="#9a6700">Languages</text>
-    <text class="m" x="16" y="108" font-size="10.5" fill="#59636e">Java 42%</text>
+    <text class="m" x="16" y="108" font-size="10.5" fill="#59636e">Java 43%</text>
   </g></g>
   <rect x="0.5" y="0.5" width="999" height="235" rx="14" fill="none" stroke="#d0d7de"/>
 </g>

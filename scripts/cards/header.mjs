@@ -1,4 +1,19 @@
+import { readFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { THEMES, FONT, MONO, BASE_MOTION, esc } from '../theme.mjs'
+
+// GitHub renders this SVG through <img> in a sandbox that blocks every external
+// fetch, so the portrait has to travel inside the file as a data URI. If the file
+// is ever missing the monogram underneath shows through instead.
+const AVATAR = (() => {
+  try {
+    const file = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'assets', 'avatar.jpg')
+    return `data:image/jpeg;base64,${readFileSync(file).toString('base64')}`
+  } catch {
+    return null
+  }
+})()
 
 const ROLES = [
   'Spring Boot & Java 21',
@@ -61,6 +76,10 @@ export function header(theme, data) {
     <circle cx="1.4" cy="1.4" r="1.4" fill="${t.grid}" fill-opacity="${t.gridOpacity}"/>
   </pattern>
   <clipPath id="frame"><rect width="${W}" height="${H}" rx="14"/></clipPath>
+  <clipPath id="avatar"><circle cx="${cx}" cy="${cy}" r="40"/></clipPath>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="${t.cyan}"/><stop offset="100%" stop-color="${t.violet}"/>
+  </linearGradient>
   <style>
     ${BASE_MOTION}
     ${roleKeyframes(ROLES.length)}
@@ -91,8 +110,15 @@ export function header(theme, data) {
     <g style="animation:spinBack 18s linear infinite; transform-origin:${cx}px ${cy}px;">
       <circle cx="${cx - 58}" cy="${cy}" r="3.2" fill="${t.violet}"/>
     </g>
-    <circle cx="${cx}" cy="${cy}" r="42" fill="${t.panelAlt}" fill-opacity="0.85" stroke="${t.border}"/>
+    <circle cx="${cx}" cy="${cy}" r="42" fill="${t.panelAlt}" fill-opacity="0.9" stroke="${t.border}"/>
     <text class="t" x="${cx}" y="${cy + 11}" text-anchor="middle" font-size="30" font-weight="700" fill="url(#name)" letter-spacing="1">SS</text>
+    ${
+      AVATAR
+        ? `<image class="fade" href="${AVATAR}" x="${cx - 40}" y="${cy - 40}" width="80" height="80"
+      clip-path="url(#avatar)" preserveAspectRatio="xMidYMid slice" style="animation-delay:.35s"/>
+    <circle cx="${cx}" cy="${cy}" r="41" fill="none" stroke="url(#ring)" stroke-width="1.75" stroke-opacity="0.85"/>`
+        : ''
+    }
   </g>
 
   <g class="rise" style="animation-delay:.05s">

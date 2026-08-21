@@ -9,7 +9,7 @@ const ROLES = [
 ]
 
 const W = 1000
-const H = 300
+const H = 250
 
 function roleKeyframes(n, secondsEach = 2.8) {
   const total = n * secondsEach
@@ -36,7 +36,7 @@ export function header(theme, data) {
     { r: 92, dur: 40, dash: '1 14', color: t.indigo, op: 0.35 },
   ]
   const cx = 838
-  const cy = 150
+  const cy = 125
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(data.name)} — Full-Stack Software Engineer">
 <title>${esc(data.name)} — Full-Stack Software Engineer</title>
@@ -69,13 +69,12 @@ export function header(theme, data) {
     .glowA { animation:drift 15s ease-in-out infinite; }
     .glowB { animation:drift2 19s ease-in-out infinite; }
     .sweepline { animation:sweep 6.5s cubic-bezier(.4,0,.2,1) infinite; }
-    .dot { animation:pulse 2.4s ease-in-out infinite; }
   </style>
 </defs>
 <g clip-path="url(#frame)">
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  <ellipse class="glowA" cx="140" cy="46" rx="330" ry="200" fill="url(#glowA)"/>
-  <ellipse class="glowB" cx="880" cy="268" rx="340" ry="210" fill="url(#glowB)"/>
+  <ellipse class="glowA" cx="140" cy="40" rx="330" ry="180" fill="url(#glowA)"/>
+  <ellipse class="glowB" cx="880" cy="222" rx="340" ry="190" fill="url(#glowB)"/>
   <rect width="${W}" height="${H}" fill="url(#dots)"/>
 
   <g opacity="0.9">
@@ -97,29 +96,21 @@ export function header(theme, data) {
   </g>
 
   <g class="rise" style="animation-delay:.05s">
-    <text class="m" x="56" y="72" font-size="11.5" letter-spacing="3.4" fill="${t.muted}">FULL-STACK SOFTWARE ENGINEER — SRI LANKA</text>
+    <text class="m" x="56" y="68" font-size="11.5" letter-spacing="3.4" fill="${t.muted}">FULL-STACK SOFTWARE ENGINEER — SRI LANKA</text>
   </g>
   <g class="rise" style="animation-delay:.16s">
-    <text class="t" x="56" y="126" font-size="42" font-weight="800" fill="url(#name)" letter-spacing="-0.8">${esc(data.name)}</text>
+    <text class="t" x="56" y="122" font-size="42" font-weight="800" fill="url(#name)" letter-spacing="-0.8">${esc(data.name)}</text>
   </g>
   <g class="rise" style="animation-delay:.28s">
-    <text class="t" x="56" y="162" font-size="17" font-weight="500" fill="${t.text}">I build backends that survive production.</text>
+    <text class="t" x="56" y="158" font-size="17" font-weight="500" fill="${t.text}">I build backends that survive production.</text>
   </g>
 
-  <g transform="translate(56,200)">
+  <g transform="translate(56,196)">
     <rect x="0" y="-13" width="3" height="18" rx="1.5" fill="${t.cyan}"/>
     ${ROLES.map(
       (r, i) =>
         `<text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="${t.cyan}" style="animation-delay:${(i * 2.8).toFixed(1)}s">${esc(r)}</text>`,
     ).join('\n    ')}
-  </g>
-
-  <g transform="translate(56,232)">
-    <g class="rise" style="animation-delay:.44s">
-      <rect width="238" height="30" rx="15" fill="${t.panelAlt}" fill-opacity="0.9" stroke="${t.border}"/>
-      <circle class="dot" cx="18" cy="15" r="4.5" fill="${t.green}"/>
-      <text class="t" x="32" y="19.5" font-size="12.5" font-weight="600" fill="${t.text}">Open to graduate &amp; junior SWE roles</text>
-    </g>
   </g>
 
   <rect x="0" y="${H - 3}" width="${W}" height="3" fill="${t.borderSoft}"/>

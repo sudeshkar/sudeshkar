@@ -38,11 +38,11 @@
 
   <rect x="22" y="66" width="436" height="12" rx="6" fill="#eaeef2"/>
   <g clip-path="url(#barclip)">
-    <rect class="seg" x="22.00" y="66" width="182.44" height="12" fill="#b07219" style="transform-origin:22.00px 0; animation-delay:0.10s"/>
-    <rect class="seg" x="204.44" y="66" width="89.98" height="12" fill="#178600" style="transform-origin:204.44px 0; animation-delay:0.16s"/>
-    <rect class="seg" x="294.43" y="66" width="76.53" height="12" fill="#f1e05a" style="transform-origin:294.43px 0; animation-delay:0.22s"/>
-    <rect class="seg" x="370.95" y="66" width="61.67" height="12" fill="#3178c6" style="transform-origin:370.95px 0; animation-delay:0.28s"/>
-    <rect class="seg" x="432.62" y="66" width="17.76" height="12" fill="#663399" style="transform-origin:432.62px 0; animation-delay:0.34s"/>
+    <rect class="seg" x="22.00" y="66" width="182.48" height="12" fill="#b07219" style="transform-origin:22.00px 0; animation-delay:0.10s"/>
+    <rect class="seg" x="204.48" y="66" width="90.00" height="12" fill="#178600" style="transform-origin:204.48px 0; animation-delay:0.16s"/>
+    <rect class="seg" x="294.49" y="66" width="76.44" height="12" fill="#f1e05a" style="transform-origin:294.49px 0; animation-delay:0.22s"/>
+    <rect class="seg" x="370.93" y="66" width="61.68" height="12" fill="#3178c6" style="transform-origin:370.93px 0; animation-delay:0.28s"/>
+    <rect class="seg" x="432.61" y="66" width="17.76" height="12" fill="#663399" style="transform-origin:432.61px 0; animation-delay:0.34s"/>
     <rect class="seg" x="450.38" y="66" width="3.60" height="12" fill="#3572A5" style="transform-origin:450.38px 0; animation-delay:0.40s"/>
     <rect class="seg" x="453.98" y="66" width="3.58" height="12" fill="#e34c26" style="transform-origin:453.98px 0; animation-delay:0.46s"/>
     <rect class="seg" x="457.56" y="66" width="1.50" height="12" fill="#384d54" style="transform-origin:457.56px 0; animation-delay:0.52s"/>
@@ -52,7 +52,7 @@
   <g class="rise" style="animation-delay:0.24s">
     <circle cx="27" cy="100" r="5" fill="#b07219"/>
     <text class="t" x="40" y="104" font-size="12" font-weight="600" fill="#1f2328">Java</text>
-    <text class="m" x="214" y="104" text-anchor="end" font-size="11" fill="#59636e">41.8%</text>
+    <text class="m" x="214" y="104" text-anchor="end" font-size="11" fill="#59636e">41.9%</text>
   </g>
   <g class="rise" style="animation-delay:0.29s">
     <circle cx="245" cy="100" r="5" fill="#178600"/>
@@ -62,7 +62,7 @@
   <g class="rise" style="animation-delay:0.34s">
     <circle cx="27" cy="130" r="5" fill="#f1e05a"/>
     <text class="t" x="40" y="134" font-size="12" font-weight="600" fill="#1f2328">JavaScript</text>
-    <text class="m" x="214" y="134" text-anchor="end" font-size="11" fill="#59636e">17.6%</text>
+    <text class="m" x="214" y="134" text-anchor="end" font-size="11" fill="#59636e">17.5%</text>
   </g>
   <g class="rise" style="animation-delay:0.39s">
     <circle cx="245" cy="130" r="5" fill="#3178c6"/>

@@ -63,9 +63,9 @@
   <line class="spoke" x1="90.7" y1="143.8" x2="58.2" y2="151.2"
     stroke="#4338ca" stroke-width="15" stroke-linecap="round"
     stroke-dasharray="33.3" stroke-dashoffset="33.3" style="animation-delay:0.47s"/>
-  <line class="spoke" x1="95.7" y1="121.8" x2="86.3" y2="114.3"
+  <line class="spoke" x1="95.7" y1="121.8" x2="83.2" y2="111.8"
     stroke="#0e7490" stroke-width="15" stroke-linecap="round"
-    stroke-dasharray="12.0" stroke-dashoffset="12.0" style="animation-delay:0.54s"/>
+    stroke-dasharray="16.0" stroke-dashoffset="16.0" style="animation-delay:0.54s"/>
   <text class="m fade" x="116.0" y="53.5" text-anchor="middle" font-size="9" fill="#59636e" style="animation-delay:.8s">S</text>
   <text class="m fade" x="184.8" y="86.6" text-anchor="middle" font-size="9" fill="#59636e" style="animation-delay:.8s">M</text>
   <text class="m fade" x="201.8" y="161.1" text-anchor="middle" font-size="9" fill="#59636e" style="animation-delay:.8s">T</text>
@@ -74,7 +74,7 @@
   <text class="m fade" x="30.2" y="161.1" text-anchor="middle" font-size="9" fill="#59636e" style="animation-delay:.8s">F</text>
   <text class="m fade" x="47.2" y="86.6" text-anchor="middle" font-size="9" fill="#59636e" style="animation-delay:.8s">S</text>
   <circle cx="116" cy="138" r="19" fill="#f6f8fa" stroke="#d0d7de"/>
-  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#0b0d10" style="animation-delay:.9s">165</text>
+  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#0b0d10" style="animation-delay:.9s">168</text>
   <text class="m fade" x="116" y="150" text-anchor="middle" font-size="7.5" letter-spacing="0.6" fill="#59636e" style="animation-delay:.9s">TOTAL</text>
 
   <g class="rise" style="animation-delay:0.20s">
@@ -122,9 +122,9 @@
   <g class="rise" style="animation-delay:0.50s">
     <text class="m" x="232" y="208" font-size="10.5" font-weight="400" fill="#59636e">Sat</text>
     <rect x="264" y="200" width="180.0" height="7" rx="3.5" fill="#eaeef2"/>
-    <rect x="264" y="200" width="45.0" height="7" rx="3.5" fill="#0e7490"
+    <rect x="264" y="200" width="60.0" height="7" rx="3.5" fill="#0e7490"
       style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.58s"/>
-    <text class="m" x="458" y="208" text-anchor="end" font-size="10" fill="#818b98">9</text>
+    <text class="m" x="458" y="208" text-anchor="end" font-size="10" fill="#818b98">12</text>
   </g>
   <rect x="0.5" y="0.5" width="479" height="237" rx="14" fill="none" stroke="#d0d7de"/>
 </g>

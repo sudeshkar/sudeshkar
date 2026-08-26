@@ -35,7 +35,7 @@
   <rect width="1000" height="236" fill="url(#sdots)"/>
 
   <text class="t" x="24" y="38" font-size="15" font-weight="700" fill="#e6edf3">Engineering activity</text>
-  <text class="m" x="976" y="38" text-anchor="end" font-size="10.5" letter-spacing="1.4" fill="#586069">SELF-HOSTED · 2026-08-25</text>
+  <text class="m" x="976" y="38" text-anchor="end" font-size="10.5" letter-spacing="1.4" fill="#586069">SELF-HOSTED · 2026-08-26</text>
   <rect x="24" y="52" width="952" height="1" fill="#1c242d"/>
 
   <g transform="translate(24.0,72)"><g class="rise" style="animation-delay:0.08s">

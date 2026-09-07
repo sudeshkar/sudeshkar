@@ -45,9 +45,9 @@
     <circle cx="116" cy="138" r="54" fill="none" stroke="#26303b" stroke-width="1" stroke-dasharray="2 6"/>
     <circle cx="116" cy="138" r="70" fill="none" stroke="#26303b" stroke-width="1" stroke-dasharray="2 6"/>
   </g>
-  <line class="spoke" x1="116.0" y1="112.0" x2="116.0" y2="90.7"
+  <line class="spoke" x1="116.0" y1="112.0" x2="116.0" y2="92.0"
     stroke="#22d3ee" stroke-width="15" stroke-linecap="round"
-    stroke-dasharray="21.3" stroke-dashoffset="21.3" style="animation-delay:0.12s"/>
+    stroke-dasharray="20.0" stroke-dashoffset="20.0" style="animation-delay:0.12s"/>
   <line class="spoke" x1="136.3" y1="121.8" x2="172.8" y2="92.7"
     stroke="#a78bfa" stroke-width="15" stroke-linecap="round"
     stroke-dasharray="46.7" stroke-dashoffset="46.7" style="animation-delay:0.19s"/>
@@ -74,15 +74,15 @@
   <text class="m fade" x="30.2" y="161.1" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">F</text>
   <text class="m fade" x="47.2" y="86.6" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">S</text>
   <circle cx="116" cy="138" r="19" fill="#161b22" stroke="#26303b"/>
-  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" style="animation-delay:.9s">168</text>
+  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" style="animation-delay:.9s">167</text>
   <text class="m fade" x="116" y="150" text-anchor="middle" font-size="7.5" letter-spacing="0.6" fill="#8b949e" style="animation-delay:.9s">TOTAL</text>
 
   <g class="rise" style="animation-delay:0.20s">
     <text class="m" x="232" y="76" font-size="10.5" font-weight="400" fill="#8b949e">Sun</text>
     <rect x="264" y="68" width="180.0" height="7" rx="3.5" fill="#161b22"/>
-    <rect x="264" y="68" width="80.0" height="7" rx="3.5" fill="#22d3ee"
+    <rect x="264" y="68" width="75.0" height="7" rx="3.5" fill="#22d3ee"
       style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.28s"/>
-    <text class="m" x="458" y="76" text-anchor="end" font-size="10" fill="#586069">16</text>
+    <text class="m" x="458" y="76" text-anchor="end" font-size="10" fill="#586069">15</text>
   </g>
   <g class="rise" style="animation-delay:0.25s">
     <text class="m" x="232" y="98" font-size="10.5" font-weight="400" fill="#8b949e">Mon</text>

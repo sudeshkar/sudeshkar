@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="238" viewBox="0 0 480 238" role="img" aria-label="Most used languages">
-<title>Language mix across 17 public repositories</title>
+<title>Language mix across 18 public repositories</title>
 <defs>
   <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#010409"/></linearGradient>
   <clipPath id="lframe"><rect width="480" height="238" rx="14"/></clipPath>
@@ -33,51 +33,51 @@
   <rect width="480" height="238" fill="url(#lbg)"/>
   <rect width="480" height="238" fill="url(#ldots)"/>
   <text class="t" x="22" y="34" font-size="14" font-weight="700" fill="#e6edf3">Language mix</text>
-  <text class="m" x="458" y="34" text-anchor="end" font-size="10" letter-spacing="1.2" fill="#586069">BY BYTES · 17 REPOS · EXCL. NOTEBOOKS</text>
+  <text class="m" x="458" y="34" text-anchor="end" font-size="10" letter-spacing="1.2" fill="#586069">BY BYTES · 18 REPOS · EXCL. NOTEBOOKS</text>
   <rect x="22" y="46" width="436" height="1" fill="#1c242d"/>
 
   <rect x="22" y="66" width="436" height="12" rx="6" fill="#161b22"/>
   <g clip-path="url(#barclip)">
-    <rect class="seg" x="22.00" y="66" width="184.56" height="12" fill="#b07219" style="transform-origin:22.00px 0; animation-delay:0.10s"/>
-    <rect class="seg" x="206.56" y="66" width="91.03" height="12" fill="#7355dd" style="transform-origin:206.56px 0; animation-delay:0.16s"/>
-    <rect class="seg" x="297.59" y="66" width="71.60" height="12" fill="#f1e05a" style="transform-origin:297.59px 0; animation-delay:0.22s"/>
-    <rect class="seg" x="369.19" y="66" width="62.38" height="12" fill="#3178c6" style="transform-origin:369.19px 0; animation-delay:0.28s"/>
-    <rect class="seg" x="431.58" y="66" width="18.69" height="12" fill="#663399" style="transform-origin:431.58px 0; animation-delay:0.34s"/>
-    <rect class="seg" x="450.27" y="66" width="3.64" height="12" fill="#3572A5" style="transform-origin:450.27px 0; animation-delay:0.40s"/>
-    <rect class="seg" x="453.92" y="66" width="3.64" height="12" fill="#e34c26" style="transform-origin:453.92px 0; animation-delay:0.46s"/>
-    <rect class="seg" x="457.55" y="66" width="1.50" height="12" fill="#384d54" style="transform-origin:457.55px 0; animation-delay:0.52s"/>
+    <rect class="seg" x="22.00" y="66" width="180.25" height="12" fill="#b07219" style="transform-origin:22.00px 0; animation-delay:0.10s"/>
+    <rect class="seg" x="202.25" y="66" width="88.90" height="12" fill="#7355dd" style="transform-origin:202.25px 0; animation-delay:0.16s"/>
+    <rect class="seg" x="291.15" y="66" width="69.93" height="12" fill="#f1e05a" style="transform-origin:291.15px 0; animation-delay:0.22s"/>
+    <rect class="seg" x="361.08" y="66" width="60.92" height="12" fill="#3178c6" style="transform-origin:361.08px 0; animation-delay:0.28s"/>
+    <rect class="seg" x="422.00" y="66" width="18.26" height="12" fill="#663399" style="transform-origin:422.00px 0; animation-delay:0.34s"/>
+    <rect class="seg" x="440.26" y="66" width="13.75" height="12" fill="#3572A5" style="transform-origin:440.26px 0; animation-delay:0.40s"/>
+    <rect class="seg" x="454.01" y="66" width="3.55" height="12" fill="#e34c26" style="transform-origin:454.01px 0; animation-delay:0.46s"/>
+    <rect class="seg" x="457.56" y="66" width="1.50" height="12" fill="#384d54" style="transform-origin:457.56px 0; animation-delay:0.52s"/>
     <rect class="shine" x="22" y="66" width="70" height="12" fill="#ffffff" fill-opacity="0.16"/>
   </g>
 
   <g class="rise" style="animation-delay:0.24s">
     <circle cx="27" cy="100" r="5" fill="#b07219"/>
     <text class="t" x="40" y="104" font-size="12" font-weight="600" fill="#e6edf3">Java</text>
-    <text class="m" x="214" y="104" text-anchor="end" font-size="11" fill="#8b949e">42.3%</text>
+    <text class="m" x="214" y="104" text-anchor="end" font-size="11" fill="#8b949e">41.3%</text>
   </g>
   <g class="rise" style="animation-delay:0.29s">
     <circle cx="245" cy="100" r="5" fill="#7355dd"/>
     <text class="t" x="258" y="104" font-size="12" font-weight="600" fill="#e6edf3">C#</text>
-    <text class="m" x="432" y="104" text-anchor="end" font-size="11" fill="#8b949e">20.9%</text>
+    <text class="m" x="432" y="104" text-anchor="end" font-size="11" fill="#8b949e">20.4%</text>
   </g>
   <g class="rise" style="animation-delay:0.34s">
     <circle cx="27" cy="130" r="5" fill="#f1e05a"/>
     <text class="t" x="40" y="134" font-size="12" font-weight="600" fill="#e6edf3">JavaScript</text>
-    <text class="m" x="214" y="134" text-anchor="end" font-size="11" fill="#8b949e">16.4%</text>
+    <text class="m" x="214" y="134" text-anchor="end" font-size="11" fill="#8b949e">16.0%</text>
   </g>
   <g class="rise" style="animation-delay:0.39s">
     <circle cx="245" cy="130" r="5" fill="#3178c6"/>
     <text class="t" x="258" y="134" font-size="12" font-weight="600" fill="#e6edf3">TypeScript</text>
-    <text class="m" x="432" y="134" text-anchor="end" font-size="11" fill="#8b949e">14.3%</text>
+    <text class="m" x="432" y="134" text-anchor="end" font-size="11" fill="#8b949e">14.0%</text>
   </g>
   <g class="rise" style="animation-delay:0.44s">
     <circle cx="27" cy="160" r="5" fill="#663399"/>
     <text class="t" x="40" y="164" font-size="12" font-weight="600" fill="#e6edf3">CSS</text>
-    <text class="m" x="214" y="164" text-anchor="end" font-size="11" fill="#8b949e">4.3%</text>
+    <text class="m" x="214" y="164" text-anchor="end" font-size="11" fill="#8b949e">4.2%</text>
   </g>
   <g class="rise" style="animation-delay:0.49s">
     <circle cx="245" cy="160" r="5" fill="#3572A5"/>
     <text class="t" x="258" y="164" font-size="12" font-weight="600" fill="#e6edf3">Python</text>
-    <text class="m" x="432" y="164" text-anchor="end" font-size="11" fill="#8b949e">0.8%</text>
+    <text class="m" x="432" y="164" text-anchor="end" font-size="11" fill="#8b949e">3.2%</text>
   </g>
   <g class="rise" style="animation-delay:0.54s">
     <circle cx="27" cy="190" r="5" fill="#e34c26"/>

@@ -51,9 +51,9 @@
   <line class="spoke" x1="136.3" y1="121.8" x2="173.9" y2="91.9"
     stroke="#a78bfa" stroke-width="15" stroke-linecap="round"
     stroke-dasharray="48.0" stroke-dashoffset="48.0" style="animation-delay:0.19s"/>
-  <line class="spoke" x1="141.3" y1="143.8" x2="152.5" y2="146.3"
+  <line class="spoke" x1="141.3" y1="143.8" x2="157.6" y2="147.5"
     stroke="#22d3ee" stroke-width="15" stroke-linecap="round"
-    stroke-dasharray="11.5" stroke-dashoffset="11.5" style="animation-delay:0.26s"/>
+    stroke-dasharray="16.7" stroke-dashoffset="16.7" style="animation-delay:0.26s"/>
   <line class="spoke" x1="127.3" y1="161.4" x2="143.1" y2="194.3"
     stroke="#a78bfa" stroke-width="15" stroke-linecap="round"
     stroke-dasharray="36.5" stroke-dashoffset="36.5" style="animation-delay:0.33s"/>
@@ -74,7 +74,7 @@
   <text class="m fade" x="30.2" y="161.1" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">F</text>
   <text class="m fade" x="47.2" y="86.6" text-anchor="middle" font-size="9" fill="#8b949e" style="animation-delay:.8s">S</text>
   <circle cx="116" cy="138" r="19" fill="#161b22" stroke="#26303b"/>
-  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" style="animation-delay:.9s">184</text>
+  <text class="t fade" x="116" y="139" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" style="animation-delay:.9s">189</text>
   <text class="m fade" x="116" y="150" text-anchor="middle" font-size="7.5" letter-spacing="0.6" fill="#8b949e" style="animation-delay:.9s">TOTAL</text>
 
   <g class="rise" style="animation-delay:0.20s">
@@ -94,9 +94,9 @@
   <g class="rise" style="animation-delay:0.30s">
     <text class="m" x="232" y="120" font-size="10.5" font-weight="400" fill="#8b949e">Tue</text>
     <rect x="264" y="112" width="180.0" height="7" rx="3.5" fill="#161b22"/>
-    <rect x="264" y="112" width="43.0" height="7" rx="3.5" fill="#22d3ee"
+    <rect x="264" y="112" width="62.6" height="7" rx="3.5" fill="#22d3ee"
       style="transform-origin:264px 0; transform:scaleX(0); animation:growX .8s cubic-bezier(.22,.8,.3,1) forwards; animation-delay:0.38s"/>
-    <text class="m" x="458" y="120" text-anchor="end" font-size="10" fill="#586069">11</text>
+    <text class="m" x="458" y="120" text-anchor="end" font-size="10" fill="#586069">16</text>
   </g>
   <g class="rise" style="animation-delay:0.35s">
     <text class="m" x="232" y="142" font-size="10.5" font-weight="400" fill="#8b949e">Wed</text>

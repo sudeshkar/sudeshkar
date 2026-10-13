@@ -1,14 +1,27 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-12T15:22:10.371Z",
+ "generatedAt": "2026-10-13T00:38:23.646Z",
  "followers": 2,
  "repoCount": 18,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 7,
- "externalMergedPRs": 7,
+ "mergedPRs": 8,
+ "externalMergedPRs": 8,
  "externalPRs": [
+  {
+   "number": 3793,
+   "title": "(fix) O3-6097: Fix inverted labels on the free text dosage toggle",
+   "url": "https://github.com/openmrs/openmrs-esm-patient-chart/pull/3793",
+   "mergedAt": "2026-10-12T17:54:09Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-patient-chart",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 816,
    "title": "(fix) O3-5963: Improve contrast and anchoring of remove-attachment btn",
@@ -102,20 +115,15 @@
   }
  ],
  "contributedRepos": 19,
- "lifetime": 234,
- "lifetimeCommits": 177,
+ "lifetime": 236,
+ "lifetimeCommits": 178,
  "year": {
-  "total": 182,
-  "commits": 134,
-  "prs": 21,
+  "total": 184,
+  "commits": 135,
+  "prs": 22,
   "reviews": 0
  },
  "days": [
-  {
-   "date": "2025-10-13",
-   "count": 0,
-   "weekday": 1
-  },
   {
    "date": "2025-10-14",
    "count": 0,
@@ -1933,8 +1941,13 @@
   },
   {
    "date": "2026-10-12",
-   "count": 2,
+   "count": 4,
    "weekday": 1
+  },
+  {
+   "date": "2026-10-13",
+   "count": 0,
+   "weekday": 2
   }
  ],
  "activeWeeks": 22,

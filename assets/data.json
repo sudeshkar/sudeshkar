@@ -1,14 +1,53 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-13T14:09:52.525Z",
+ "generatedAt": "2026-10-13T22:43:49.158Z",
  "followers": 2,
  "repoCount": 18,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 8,
- "externalMergedPRs": 8,
+ "mergedPRs": 11,
+ "externalMergedPRs": 11,
  "externalPRs": [
+  {
+   "number": 683,
+   "title": "(fix) O3-6106: Stock management dashboard clips at tablet width",
+   "url": "https://github.com/openmrs/openmrs-esm-stock-management-app/pull/683",
+   "mergedAt": "2026-10-13T19:39:54Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-stock-management-app",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
+  {
+   "number": 2823,
+   "title": "(fix) O3-6106: Home dashboards clip at tablet width",
+   "url": "https://github.com/openmrs/openmrs-esm-patient-management/pull/2823",
+   "mergedAt": "2026-10-13T19:35:09Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-patient-management",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
+  {
+   "number": 878,
+   "title": "(fix) O3-6102: Fetch all pages of lab orders in the worklist",
+   "url": "https://github.com/openmrs/openmrs-esm-laboratory-app/pull/878",
+   "mergedAt": "2026-10-13T18:10:37Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-laboratory-app",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 3793,
    "title": "(fix) O3-6097: Fix inverted labels on the free text dosage toggle",
@@ -114,12 +153,12 @@
    }
   }
  ],
- "contributedRepos": 19,
- "lifetime": 241,
- "lifetimeCommits": 178,
+ "contributedRepos": 20,
+ "lifetime": 242,
+ "lifetimeCommits": 179,
  "year": {
-  "total": 189,
-  "commits": 135,
+  "total": 190,
+  "commits": 136,
   "prs": 25,
   "reviews": 0
  },
@@ -1946,7 +1985,7 @@
   },
   {
    "date": "2026-10-13",
-   "count": 5,
+   "count": 6,
    "weekday": 2
   }
  ],

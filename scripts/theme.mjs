@@ -1,56 +1,70 @@
-// Two palettes so the README can serve a real light and dark asset through <picture>,
-// instead of relying on prefers-color-scheme inside a camo-proxied image.
+import { readFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+// The same tokens as the portfolio (portfolio-v3/src/index.css), so the profile and
+// the site read as one identity: a crimson field, cream paper, black ink.
+// Two palettes so the README can serve a real light and dark asset through <picture>.
 export const THEMES = {
   dark: {
     id: 'dark',
-    bg: '#0d1117',
-    bgAlt: '#010409',
-    panel: '#0f141b',
-    panelAlt: '#161b22',
-    border: '#26303b',
-    borderSoft: '#1c242d',
-    text: '#e6edf3',
-    textStrong: '#ffffff',
-    muted: '#8b949e',
-    faint: '#586069',
-    cyan: '#22d3ee',
-    violet: '#a78bfa',
-    indigo: '#818cf8',
-    green: '#3fb950',
-    amber: '#d29922',
-    grid: '#ffffff',
-    gridOpacity: 0.045,
-    glowOpacity: 0.5,
-    cellEmpty: '#161b22',
+    paper: '#000000',
+    ink: '#f2ede4',
+    inkStrong: '#ffffff',
+    muted: '#9b958d',
+    rule: '#2a2622',
+    ruleStrong: '#4a443e',
+    accent: '#f2321c',
+    accentDeep: '#d01029',
+    empty: '#16130f',
+    ramp: ['#4a0a14', '#8a0c1f', '#d01029', '#f2321c'],
   },
   light: {
     id: 'light',
-    bg: '#ffffff',
-    bgAlt: '#f6f8fa',
-    panel: '#ffffff',
-    panelAlt: '#f6f8fa',
-    border: '#d0d7de',
-    borderSoft: '#e4e8ed',
-    text: '#1f2328',
-    textStrong: '#0b0d10',
-    muted: '#59636e',
-    faint: '#818b98',
-    cyan: '#0e7490',
-    violet: '#6d28d9',
-    indigo: '#4338ca',
-    green: '#1a7f37',
-    amber: '#9a6700',
-    grid: '#1f2328',
-    gridOpacity: 0.05,
-    glowOpacity: 0.16,
-    cellEmpty: '#eaeef2',
+    paper: '#f2ede4',
+    ink: '#1c1a17',
+    inkStrong: '#000000',
+    muted: '#5b5650',
+    rule: '#d9d1c3',
+    ruleStrong: '#b5ab9b',
+    accent: '#d01029',
+    accentDeep: '#6e0715',
+    empty: '#e6dfd2',
+    ramp: ['#f1b3ba', '#e4596b', '#d01029', '#6e0715'],
   },
 }
 
-export const FONT =
-  "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif"
-export const MONO =
-  "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
+export const CRIMSON = { field: '#d01029', hot: '#f2321c', deep: '#6e0715', ink: '#3d040c', bone: '#ffffff', cream: '#f2ede4' }
+
+// GitHub serves README SVGs through <img>, which may not fetch anything, so Archivo
+// has to travel inside each file. The subsets in assets/fonts are static instances of
+// the variable font (built once from Google Fonts' Archivo[wdth,wght]) cut to ASCII
+// plus a few marks, about 7 KB each.
+const FONT_DIR = join(dirname(fileURLToPath(import.meta.url)), '..', 'assets', 'fonts')
+const FACES = {
+  display: 'archivo-display',
+  condensed: 'archivo-condensed',
+  regular: 'archivo-regular',
+  semibold: 'archivo-semibold',
+}
+const fontData = Object.fromEntries(
+  Object.entries(FACES).map(([k, file]) => [
+    k,
+    readFileSync(join(FONT_DIR, `${file}.woff2`)).toString('base64'),
+  ]),
+)
+
+const FALLBACK = "'Arial Narrow','Helvetica Neue',Arial,sans-serif"
+
+/** @font-face rules plus a class per face, for only the faces a card uses. */
+export function fonts(...faces) {
+  return faces
+    .map(
+      (k) => `@font-face { font-family:'A-${k}'; src:url(data:font/woff2;base64,${fontData[k]}) format('woff2'); }
+  .${k} { font-family:'A-${k}',${FALLBACK}; }`,
+    )
+    .join('\n  ')
+}
 
 export const esc = (s) =>
   String(s)
@@ -59,21 +73,19 @@ export const esc = (s) =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
 
-// Shared keyframes every card pulls from, so motion feels like one system.
-export const BASE_MOTION = `
-  @keyframes rise { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
-  @keyframes fade { from { opacity:0; } to { opacity:1; } }
-  @keyframes drift { 0%,100% { transform:translate(0,0); } 50% { transform:translate(18px,-12px); } }
-  @keyframes drift2 { 0%,100% { transform:translate(0,0); } 50% { transform:translate(-22px,14px); } }
-  @keyframes sweep { 0% { transform:translateX(-100%); } 100% { transform:translateX(100%); } }
-  @keyframes spin { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
-  @keyframes spinBack { from { transform:rotate(360deg); } to { transform:rotate(0deg); } }
-  @keyframes pulse { 0%,100% { opacity:.35; r:4; } 50% { opacity:1; r:5.5; } }
-  @keyframes dash { to { stroke-dashoffset:0; } }
-  .rise { opacity:0; animation:rise .7s cubic-bezier(.22,.8,.3,1) forwards; }
-  .fade { opacity:0; animation:fade .8s ease forwards; }
+export const EASE = 'cubic-bezier(.16,1,.3,1)'
+
+// One entrance per card and nothing that loops. Reduced motion shows the end state.
+export const MOTION = `
+  @keyframes up { from { transform:translateY(105%); } to { transform:translateY(0); } }
+  @keyframes in { from { opacity:0; } to { opacity:1; } }
+  @keyframes grow { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+  @keyframes rise { from { transform:scaleY(0); } to { transform:scaleY(1); } }
+  .in { animation:in .9s ${EASE} both; }
   @media (prefers-reduced-motion: reduce) {
-    * { animation-duration:.001s !important; animation-delay:0s !important; }
-    .rise, .fade { opacity:1; }
+    * { animation:none !important; }
   }
 `
+
+export const fmt = (n) =>
+  n >= 10000 ? `${Math.round(n / 1000)}k` : n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n)

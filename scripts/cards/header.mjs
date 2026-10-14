@@ -1,147 +1,71 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { THEMES, FONT, MONO, BASE_MOTION, esc } from '../theme.mjs'
+import { CRIMSON as C, fonts, MOTION, EASE, esc } from '../theme.mjs'
 
 // GitHub renders this SVG through <img> in a sandbox that blocks every external
-// fetch, so the portrait has to travel inside the file as a data URI. If the file
-// is ever missing the monogram underneath shows through instead.
-const AVATAR = (() => {
+// fetch, so the portrait travels inside the file. If it is ever missing, the name
+// simply runs the full width of the field on its own.
+const PORTRAIT = (() => {
   try {
-    const file = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'assets', 'avatar.jpg')
-    return `data:image/jpeg;base64,${readFileSync(file).toString('base64')}`
+    const file = join(dirname(fileURLToPath(import.meta.url)), '..', '..', 'assets', 'portrait-cutout.webp')
+    return `data:image/webp;base64,${readFileSync(file).toString('base64')}`
   } catch {
     return null
   }
 })()
 
-const ROLES = [
-  'Spring Boot & Java 21',
-  'C# / .NET & Blazor WASM',
-  'React & TypeScript',
-  'REST APIs that hold up',
-  'OpenMRS contributor',
-]
-
 const W = 1000
-const H = 250
+const H = 320
+// The cut-out is 560 x 554; it stands on the bottom edge, flush right, so the
+// shoulder the photo slices off on that side disappears into the frame edge.
+const PH = 300
+const PW = Math.round((560 / 554) * PH)
+const PX = W - PW
+const PY = H - PH
 
-function roleKeyframes(n, secondsEach = 2.8) {
-  const total = n * secondsEach
-  const slice = 100 / n
-  const inAt = (slice * 0.06).toFixed(2)
-  const holdAt = (slice * 0.84).toFixed(2)
-  const outAt = (slice * 0.94).toFixed(2)
-  return `
-  @keyframes roleCycle {
-    0% { opacity:0; transform:translateY(7px); }
-    ${inAt}% { opacity:1; transform:translateY(0); }
-    ${holdAt}% { opacity:1; transform:translateY(0); }
-    ${outAt}% { opacity:0; transform:translateY(-7px); }
-    100% { opacity:0; transform:translateY(-7px); }
-  }
-  .role { opacity:0; animation:roleCycle ${total}s linear infinite; }`
-}
+// The poster is the same in both themes: the crimson field is the identity, and it
+// holds up against GitHub's white and its near-black alike.
+export function header(_theme, data) {
+  const surname = (data.name || 'Sathieskumar Sudeshkar').split(' ').pop().toUpperCase()
+  const given = (data.name || 'Sathieskumar Sudeshkar').split(' ').slice(0, -1).join(' ')
 
-export function header(theme, data) {
-  const t = THEMES[theme]
-  const orbit = [
-    { r: 74, dur: 26, dash: '3 9', color: t.cyan, op: 0.55 },
-    { r: 58, dur: 18, dash: '2 7', color: t.violet, op: 0.5 },
-    { r: 92, dur: 40, dash: '1 14', color: t.indigo, op: 0.35 },
-  ]
-  const cx = 838
-  const cy = 125
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(data.name)} — Full-Stack Software Engineer">
-<title>${esc(data.name)} — Full-Stack Software Engineer</title>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(data.name)}, full-stack software engineer in Sri Lanka">
+<title>${esc(data.name)}, full-stack software engineer in Sri Lanka</title>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="${t.bg}"/><stop offset="100%" stop-color="${t.bgAlt}"/>
+  <clipPath id="field"><rect width="${W}" height="${H}"/></clipPath>
+  <linearGradient id="edgeFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="0.09" stop-color="#fff" stop-opacity="1"/>
   </linearGradient>
-  <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="${t.textStrong}"/>
-    <stop offset="62%" stop-color="${t.cyan}"/>
-    <stop offset="100%" stop-color="${t.violet}"/>
-  </linearGradient>
-  <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="${t.cyan}" stop-opacity="0"/>
-    <stop offset="45%" stop-color="${t.cyan}"/>
-    <stop offset="70%" stop-color="${t.violet}"/>
-    <stop offset="100%" stop-color="${t.violet}" stop-opacity="0"/>
-  </linearGradient>
-  <radialGradient id="glowA"><stop offset="0%" stop-color="${t.cyan}" stop-opacity="${t.glowOpacity}"/><stop offset="100%" stop-color="${t.cyan}" stop-opacity="0"/></radialGradient>
-  <radialGradient id="glowB"><stop offset="0%" stop-color="${t.violet}" stop-opacity="${t.glowOpacity}"/><stop offset="100%" stop-color="${t.violet}" stop-opacity="0"/></radialGradient>
-  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-    <circle cx="1.4" cy="1.4" r="1.4" fill="${t.grid}" fill-opacity="${t.gridOpacity}"/>
-  </pattern>
-  <clipPath id="frame"><rect width="${W}" height="${H}" rx="14"/></clipPath>
-  <clipPath id="avatar"><circle cx="${cx}" cy="${cy}" r="40"/></clipPath>
-  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="${t.cyan}"/><stop offset="100%" stop-color="${t.violet}"/>
-  </linearGradient>
+  <mask id="cutTop" maskUnits="userSpaceOnUse" x="${PX}" y="${PY}" width="${PW}" height="${PH}">
+    <rect x="${PX}" y="${PY}" width="${PW}" height="${PH * 0.55 + 1}" fill="#fff"/>
+    <rect x="${PX}" y="${PY + PH * 0.55}" width="${PW}" height="${PH * 0.45}" fill="url(#edgeFade)"/>
+  </mask>
   <style>
-    ${BASE_MOTION}
-    ${roleKeyframes(ROLES.length)}
-    .t { font-family:${FONT}; }
-    .m { font-family:${MONO}; }
-    .glowA { animation:drift 15s ease-in-out infinite; }
-    .glowB { animation:drift2 19s ease-in-out infinite; }
-    .sweepline { animation:sweep 6.5s cubic-bezier(.4,0,.2,1) infinite; }
+    ${fonts('display', 'regular', 'semibold')}
+    ${MOTION}
+    .name { animation:up 1.1s ${EASE} .1s both; }
+    .portrait { animation:in 1.2s ${EASE} .45s both; }
   </style>
 </defs>
-<g clip-path="url(#frame)">
-  <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  <ellipse class="glowA" cx="140" cy="40" rx="330" ry="180" fill="url(#glowA)"/>
-  <ellipse class="glowB" cx="880" cy="222" rx="340" ry="190" fill="url(#glowB)"/>
-  <rect width="${W}" height="${H}" fill="url(#dots)"/>
+<g clip-path="url(#field)">
+  <rect width="${W}" height="${H}" fill="${C.field}"/>
 
-  <g opacity="0.9">
-    ${orbit
-      .map(
-        (o, i) => `<circle cx="${cx}" cy="${cy}" r="${o.r}" fill="none"
-      stroke="${o.color}" stroke-opacity="${o.op}" stroke-width="1.25" stroke-dasharray="${o.dash}"
-      style="animation:${i % 2 ? 'spinBack' : 'spin'} ${o.dur}s linear infinite; transform-origin:${cx}px ${cy}px;"/>`,
-      )
-      .join('\n    ')}
-    <g style="animation:spin 26s linear infinite; transform-origin:${cx}px ${cy}px;">
-      <circle cx="${cx + 74}" cy="${cy}" r="4" fill="${t.cyan}"/>
-    </g>
-    <g style="animation:spinBack 18s linear infinite; transform-origin:${cx}px ${cy}px;">
-      <circle cx="${cx - 58}" cy="${cy}" r="3.2" fill="${t.violet}"/>
-    </g>
-    <circle cx="${cx}" cy="${cy}" r="42" fill="${t.panelAlt}" fill-opacity="0.9" stroke="${t.border}"/>
-    <text class="t" x="${cx}" y="${cy + 11}" text-anchor="middle" font-size="30" font-weight="700" fill="url(#name)" letter-spacing="1">SS</text>
-    ${
-      AVATAR
-        ? `<image class="fade" href="${AVATAR}" x="${cx - 40}" y="${cy - 40}" width="80" height="80"
-      clip-path="url(#avatar)" preserveAspectRatio="xMidYMid slice" style="animation-delay:.35s"/>
-    <circle cx="${cx}" cy="${cy}" r="41" fill="none" stroke="url(#ring)" stroke-width="1.75" stroke-opacity="0.85"/>`
-        : ''
-    }
+  <text class="semibold in" x="48" y="64" font-size="22" fill="${C.bone}" style="animation-delay:.05s">${esc(given)}</text>
+  <text class="regular in" x="48" y="112" font-size="30" fill="${C.bone}" letter-spacing="-0.4" style="animation-delay:.2s">I build backends that</text>
+  <text class="regular in" x="48" y="148" font-size="30" fill="${C.bone}" letter-spacing="-0.4" style="animation-delay:.2s">survive production.</text>
+  <text class="regular in" x="48" y="184" font-size="15" fill="${C.cream}" fill-opacity="0.82" style="animation-delay:.35s">Full-stack engineer in Sri Lanka, working in Java, Spring Boot, C# and React.</text>
+
+  <g>
+    <text class="display name" x="40" y="${H + 6}" font-size="154" fill="${C.ink}" letter-spacing="-1">${esc(surname)}</text>
   </g>
 
-  <g class="rise" style="animation-delay:.05s">
-    <text class="m" x="56" y="68" font-size="11.5" letter-spacing="3.4" fill="${t.muted}">FULL-STACK SOFTWARE ENGINEER — SRI LANKA</text>
-  </g>
-  <g class="rise" style="animation-delay:.16s">
-    <text class="t" x="56" y="122" font-size="42" font-weight="800" fill="url(#name)" letter-spacing="-0.8">${esc(data.name)}</text>
-  </g>
-  <g class="rise" style="animation-delay:.28s">
-    <text class="t" x="56" y="158" font-size="17" font-weight="500" fill="${t.text}">I build backends that survive production.</text>
-  </g>
-
-  <g transform="translate(56,196)">
-    <rect x="0" y="-13" width="3" height="18" rx="1.5" fill="${t.cyan}"/>
-    ${ROLES.map(
-      (r, i) =>
-        `<text class="t role" x="14" y="0" font-size="15" font-weight="600" fill="${t.cyan}" style="animation-delay:${(i * 2.8).toFixed(1)}s">${esc(r)}</text>`,
-    ).join('\n    ')}
-  </g>
-
-  <rect x="0" y="${H - 3}" width="${W}" height="3" fill="${t.borderSoft}"/>
-  <rect class="sweepline" x="0" y="${H - 3}" width="${W}" height="3" fill="url(#rule)"/>
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="none" stroke="${t.border}"/>
+  ${
+    PORTRAIT
+      ? `<g class="portrait"><image href="${PORTRAIT}" x="${PX}" y="${PY}" width="${PW}" height="${PH}" mask="url(#cutTop)" preserveAspectRatio="xMaxYMax meet"/></g>`
+      : ''
+  }
 </g>
 </svg>`
 }

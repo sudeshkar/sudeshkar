@@ -1,9 +1,9 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-14T03:21:43.361Z",
+ "generatedAt": "2026-10-14T03:25:27.713Z",
  "followers": 2,
- "repoCount": 23,
+ "repoCount": 18,
  "stars": 0,
  "forks": 0,
  "mergedPRs": 11,
@@ -154,11 +154,11 @@
   }
  ],
  "contributedRepos": 21,
- "lifetime": 247,
- "lifetimeCommits": 184,
+ "lifetime": 248,
+ "lifetimeCommits": 185,
  "year": {
-  "total": 195,
-  "commits": 141,
+  "total": 196,
+  "commits": 142,
   "prs": 25,
   "reviews": 0
  },
@@ -590,22 +590,22 @@
   },
   {
    "date": "2026-01-08",
-   "count": 0,
+   "count": 1,
    "weekday": 4
   },
   {
    "date": "2026-01-09",
-   "count": 7,
+   "count": 6,
    "weekday": 5
   },
   {
    "date": "2026-01-10",
-   "count": 0,
+   "count": 1,
    "weekday": 6
   },
   {
    "date": "2026-01-11",
-   "count": 3,
+   "count": 2,
    "weekday": 0
   },
   {
@@ -990,12 +990,12 @@
   },
   {
    "date": "2026-03-29",
-   "count": 3,
+   "count": 5,
    "weekday": 0
   },
   {
    "date": "2026-03-30",
-   "count": 5,
+   "count": 3,
    "weekday": 1
   },
   {
@@ -1300,12 +1300,12 @@
   },
   {
    "date": "2026-05-30",
-   "count": 0,
+   "count": 1,
    "weekday": 6
   },
   {
    "date": "2026-05-31",
-   "count": 2,
+   "count": 1,
    "weekday": 0
   },
   {
@@ -1985,71 +1985,65 @@
   },
   {
    "date": "2026-10-14",
-   "count": 5,
+   "count": 6,
    "weekday": 3
   }
  ],
- "activeWeeks": 21,
+ "activeWeeks": 22,
  "weekCount": 53,
  "current": 3,
- "longest": 3,
+ "longest": 8,
  "languages": [
   {
    "name": "Java",
    "size": 856529,
    "color": "#b07219",
-   "pct": 35.44408507285551
-  },
-  {
-   "name": "TypeScript",
-   "size": 605485,
-   "color": "#3178c6",
-   "pct": 25.055616155831174
+   "pct": 41.51430728950075
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 17.48180474425672
+   "pct": 20.47577226598889
   },
   {
    "name": "JavaScript",
-   "size": 353883,
+   "size": 323644,
    "color": "#f1e05a",
-   "pct": 14.6440566026805
+   "pct": 15.686399956572611
+  },
+  {
+   "name": "TypeScript",
+   "size": 289512,
+   "color": "#3178c6",
+   "pct": 14.03208780087766
   },
   {
    "name": "CSS",
-   "size": 90592,
+   "size": 86752,
    "color": "#663399",
-   "pct": 3.7487937418582753
+   "pct": 4.20470198437971
   },
   {
    "name": "Python",
-   "size": 65544,
+   "size": 65361,
    "color": "#3572A5",
-   "pct": 2.7122807424094706
+   "pct": 3.167921504991727
   },
   {
    "name": "HTML",
-   "size": 17249,
+   "size": 16876,
    "color": "#e34c26",
-   "pct": 0.7137820475683657
-  },
-  {
-   "name": "PLpgSQL",
-   "size": 2742,
-   "color": "#336790",
-   "pct": 0.11346688935198901
+   "pct": 0.8179471446006085
   },
   {
    "name": "Dockerfile",
    "size": 2081,
    "color": "#384d54",
-   "pct": 0.0861140031879975
+   "pct": 0.10086205308804613
   }
  ],
- "langBytes": 2416564,
+ "langBytes": 2063214,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

@@ -1,13 +1,13 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-15T11:26:50.405Z",
+ "generatedAt": "2026-10-15T16:59:18.857Z",
  "followers": 2,
  "repoCount": 18,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 11,
- "externalMergedPRs": 11,
+ "mergedPRs": 12,
+ "externalMergedPRs": 12,
  "externalPRs": [
   {
    "number": 683,
@@ -55,6 +55,19 @@
    "mergedAt": "2026-10-12T17:54:09Z",
    "repository": {
     "nameWithOwner": "openmrs/openmrs-esm-patient-chart",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
+  {
+   "number": 435,
+   "title": "(feat) O3-5995: Improve packages table column order and workspace action placement",
+   "url": "https://github.com/openmrs/openmrs-esm-admin-tools/pull/435",
+   "mergedAt": "2026-10-15T11:46:05Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-admin-tools",
     "isPrivate": false,
     "owner": {
      "login": "openmrs"
@@ -154,11 +167,11 @@
   }
  ],
  "contributedRepos": 21,
- "lifetime": 250,
- "lifetimeCommits": 185,
+ "lifetime": 251,
+ "lifetimeCommits": 186,
  "year": {
-  "total": 198,
-  "commits": 142,
+  "total": 199,
+  "commits": 143,
   "prs": 27,
   "reviews": 0
  },
@@ -1985,7 +1998,7 @@
   },
   {
    "date": "2026-10-15",
-   "count": 1,
+   "count": 2,
    "weekday": 4
   }
  ],

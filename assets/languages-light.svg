@@ -40,7 +40,7 @@
   <text class="regular" x="28" y="146.6" font-size="13.5" fill="#1c1a17">JavaScript</text>
   <text class="condensed" x="462" y="146.6" text-anchor="end" font-size="14" fill="#1c1a17">15.7%</text>
   <rect x="28" y="153.6" width="434" height="1" fill="#d9d1c3"/>
-  <rect class="share" x="28" y="152.6" width="164.0" height="3" fill="#1c1a17" style="transform-origin:28px 0; animation-delay:0.32s"/>
+  <rect class="share" x="28" y="152.6" width="164.1" height="3" fill="#1c1a17" style="transform-origin:28px 0; animation-delay:0.32s"/>
 </g>
 <g class="in" style="animation-delay:0.28s">
   <text class="regular" x="28" y="170.9" font-size="13.5" fill="#1c1a17">TypeScript</text>

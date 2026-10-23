@@ -1,14 +1,27 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-23T11:36:50.289Z",
+ "generatedAt": "2026-10-23T17:05:24.494Z",
  "followers": 2,
  "repoCount": 18,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 13,
- "externalMergedPRs": 13,
+ "mergedPRs": 14,
+ "externalMergedPRs": 14,
  "externalPRs": [
+  {
+   "number": 92,
+   "title": "(feat) O3-6153: Add Carbon footer to the security dashboard",
+   "url": "https://github.com/openmrs/openmrs-contrib-cvss-scanning/pull/92",
+   "mergedAt": "2026-10-23T11:49:43Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-contrib-cvss-scanning",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 91,
    "title": "(feat) O3-6143: Add Carbon top navigation bar to the security dashboard",
@@ -180,11 +193,11 @@
   }
  ],
  "contributedRepos": 22,
- "lifetime": 258,
- "lifetimeCommits": 188,
+ "lifetime": 259,
+ "lifetimeCommits": 189,
  "year": {
-  "total": 206,
-  "commits": 145,
+  "total": 207,
+  "commits": 146,
   "prs": 31,
   "reviews": 0
  },
@@ -2011,7 +2024,7 @@
   },
   {
    "date": "2026-10-23",
-   "count": 2,
+   "count": 3,
    "weekday": 5
   }
  ],

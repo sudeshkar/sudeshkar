@@ -1,14 +1,27 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-22T21:34:17.613Z",
+ "generatedAt": "2026-10-23T04:47:12.631Z",
  "followers": 2,
  "repoCount": 18,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 12,
- "externalMergedPRs": 12,
+ "mergedPRs": 13,
+ "externalMergedPRs": 13,
  "externalPRs": [
+  {
+   "number": 91,
+   "title": "(feat) O3-6143: Add Carbon top navigation bar to the security dashboard",
+   "url": "https://github.com/openmrs/openmrs-contrib-cvss-scanning/pull/91",
+   "mergedAt": "2026-10-23T02:44:34Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-contrib-cvss-scanning",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 683,
    "title": "(fix) O3-6106: Stock management dashboard clips at tablet width",
@@ -166,21 +179,16 @@
    }
   }
  ],
- "contributedRepos": 21,
- "lifetime": 256,
- "lifetimeCommits": 187,
+ "contributedRepos": 22,
+ "lifetime": 257,
+ "lifetimeCommits": 188,
  "year": {
-  "total": 204,
-  "commits": 144,
+  "total": 205,
+  "commits": 145,
   "prs": 30,
   "reviews": 0
  },
  "days": [
-  {
-   "date": "2025-10-23",
-   "count": 0,
-   "weekday": 4
-  },
   {
    "date": "2025-10-24",
    "count": 0,
@@ -2000,11 +2008,16 @@
    "date": "2026-10-22",
    "count": 2,
    "weekday": 4
+  },
+  {
+   "date": "2026-10-23",
+   "count": 1,
+   "weekday": 5
   }
  ],
  "activeWeeks": 23,
  "weekCount": 53,
- "current": 2,
+ "current": 3,
  "longest": 8,
  "languages": [
   {

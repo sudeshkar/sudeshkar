@@ -1,12 +1,12 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-30T05:46:08.621Z",
+ "generatedAt": "2026-10-30T12:53:20.264Z",
  "followers": 1,
  "repoCount": 23,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 29,
+ "mergedPRs": 38,
  "externalMergedPRs": 14,
  "externalPRs": [
   {
@@ -193,12 +193,12 @@
   }
  ],
  "contributedRepos": 27,
- "lifetime": 348,
- "lifetimeCommits": 256,
+ "lifetime": 375,
+ "lifetimeCommits": 275,
  "year": {
-  "total": 296,
-  "commits": 213,
-  "prs": 48,
+  "total": 323,
+  "commits": 232,
+  "prs": 56,
   "reviews": 0
  },
  "days": [
@@ -2024,7 +2024,7 @@
   },
   {
    "date": "2026-10-30",
-   "count": 19,
+   "count": 46,
    "weekday": 5
   }
  ],
@@ -2035,60 +2035,60 @@
  "languages": [
   {
    "name": "Java",
-   "size": 1289729,
+   "size": 1488169,
    "color": "#b07219",
-   "pct": 43.88163215450669
+   "pct": 46.786394376461324
   },
   {
    "name": "TypeScript",
-   "size": 518823,
+   "size": 562047,
    "color": "#3178c6",
-   "pct": 17.65239057142828
+   "pct": 17.67013867383809
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 14.373709855605899
+   "pct": 13.281645688013574
   },
   {
    "name": "JavaScript",
    "size": 327784,
    "color": "#f1e05a",
-   "pct": 11.152495535211521
+   "pct": 10.305167957600244
   },
   {
    "name": "Python",
    "size": 268057,
    "color": "#3572A5",
-   "pct": 9.120349058166948
+   "pct": 8.427416857474583
   },
   {
    "name": "CSS",
    "size": 89968,
    "color": "#663399",
-   "pct": 3.0610637441483117
+   "pct": 2.828494834431756
   },
   {
    "name": "HTML",
    "size": 17478,
    "color": "#e34c26",
-   "pct": 0.5946700173419903
+   "pct": 0.5494890707384651
   },
   {
    "name": "Dockerfile",
    "size": 4107,
    "color": "#384d54",
-   "pct": 0.13973622618283296
+   "pct": 0.12911955678698228
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.023952837407527246
+   "pct": 0.022132984654987954
   }
  ],
- "langBytes": 2939109,
+ "langBytes": 3180773,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

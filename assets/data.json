@@ -1,12 +1,12 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-10-30T12:53:20.264Z",
- "followers": 1,
+ "generatedAt": "2026-10-30T22:17:49.036Z",
+ "followers": 2,
  "repoCount": 23,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 38,
+ "mergedPRs": 50,
  "externalMergedPRs": 14,
  "externalPRs": [
   {
@@ -193,12 +193,12 @@
   }
  ],
  "contributedRepos": 27,
- "lifetime": 375,
- "lifetimeCommits": 275,
+ "lifetime": 401,
+ "lifetimeCommits": 292,
  "year": {
-  "total": 323,
-  "commits": 232,
-  "prs": 56,
+  "total": 349,
+  "commits": 249,
+  "prs": 65,
   "reviews": 0
  },
  "days": [
@@ -2024,7 +2024,7 @@
   },
   {
    "date": "2026-10-30",
-   "count": 46,
+   "count": 72,
    "weekday": 5
   }
  ],
@@ -2035,60 +2035,60 @@
  "languages": [
   {
    "name": "Java",
-   "size": 1488169,
+   "size": 1846133,
    "color": "#b07219",
-   "pct": 46.786394376461324
+   "pct": 49.09855065988379
   },
   {
    "name": "TypeScript",
-   "size": 562047,
+   "size": 645654,
    "color": "#3178c6",
-   "pct": 17.67013867383809
+   "pct": 17.17139319201629
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 13.281645688013574
+   "pct": 11.235444365722213
+  },
+  {
+   "name": "Python",
+   "size": 405769,
+   "color": "#3572A5",
+   "pct": 10.791567997923435
   },
   {
    "name": "JavaScript",
    "size": 327784,
    "color": "#f1e05a",
-   "pct": 10.305167957600244
-  },
-  {
-   "name": "Python",
-   "size": 268057,
-   "color": "#3572A5",
-   "pct": 8.427416857474583
+   "pct": 8.717529738918781
   },
   {
    "name": "CSS",
    "size": 89968,
    "color": "#663399",
-   "pct": 2.828494834431756
+   "pct": 2.3927303210377717
   },
   {
    "name": "HTML",
    "size": 17478,
    "color": "#e34c26",
-   "pct": 0.5494890707384651
+   "pct": 0.46483350247975036
   },
   {
    "name": "Dockerfile",
    "size": 4107,
    "color": "#384d54",
-   "pct": 0.12911955678698228
+   "pct": 0.10922709661770995
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.022132984654987954
+   "pct": 0.018723125400259995
   }
  ],
- "langBytes": 3180773,
+ "langBytes": 3760056,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

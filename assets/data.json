@@ -1,13 +1,13 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-02T05:59:13.637Z",
+ "generatedAt": "2026-11-02T15:48:27.166Z",
  "followers": 2,
  "repoCount": 23,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 82,
- "externalMergedPRs": 14,
+ "mergedPRs": 83,
+ "externalMergedPRs": 15,
  "externalPRs": [
   {
    "number": 92,
@@ -29,6 +29,19 @@
    "mergedAt": "2026-10-23T02:44:34Z",
    "repository": {
     "nameWithOwner": "openmrs/openmrs-contrib-cvss-scanning",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
+  {
+   "number": 879,
+   "title": "(fix) O3-6104: Show an error state when lab orders fail to load",
+   "url": "https://github.com/openmrs/openmrs-esm-laboratory-app/pull/879",
+   "mergedAt": "2026-11-02T12:53:08Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-laboratory-app",
     "isPrivate": false,
     "owner": {
      "login": "openmrs"
@@ -193,11 +206,11 @@
   }
  ],
  "contributedRepos": 27,
- "lifetime": 509,
- "lifetimeCommits": 365,
+ "lifetime": 510,
+ "lifetimeCommits": 366,
  "year": {
-  "total": 457,
-  "commits": 322,
+  "total": 458,
+  "commits": 323,
   "prs": 100,
   "reviews": 0
  },
@@ -2024,13 +2037,13 @@
   },
   {
    "date": "2026-11-02",
-   "count": 0,
+   "count": 1,
    "weekday": 1
   }
  ],
  "activeWeeks": 25,
  "weekCount": 53,
- "current": 4,
+ "current": 5,
  "longest": 8,
  "languages": [
   {

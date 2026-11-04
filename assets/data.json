@@ -1,13 +1,13 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-04T06:18:44.498Z",
+ "generatedAt": "2026-11-04T19:44:03.104Z",
  "followers": 2,
  "repoCount": 23,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 100,
- "externalMergedPRs": 15,
+ "mergedPRs": 103,
+ "externalMergedPRs": 12,
  "externalPRs": [
   {
    "number": 92,
@@ -164,54 +164,15 @@
      "login": "openmrs"
     }
    }
-  },
-  {
-   "number": 1734,
-   "title": "(fix) O3-5588: Correctly apply Login Location tag filter in useLocationCount",
-   "url": "https://github.com/openmrs/openmrs-esm-core/pull/1734",
-   "mergedAt": "2026-06-05T09:44:06Z",
-   "repository": {
-    "nameWithOwner": "openmrs/openmrs-esm-core",
-    "isPrivate": false,
-    "owner": {
-     "login": "openmrs"
-    }
-   }
-  },
-  {
-   "number": 250,
-   "title": "(chore) Fix typo in README",
-   "url": "https://github.com/openmrs/openmrs-esm-admin-tools/pull/250",
-   "mergedAt": "2026-04-03T19:11:20Z",
-   "repository": {
-    "nameWithOwner": "openmrs/openmrs-esm-admin-tools",
-    "isPrivate": false,
-    "owner": {
-     "login": "openmrs"
-    }
-   }
-  },
-  {
-   "number": 255,
-   "title": "(docs) Improve README setup instructions",
-   "url": "https://github.com/openmrs/openmrs-esm-template-app/pull/255",
-   "mergedAt": "2026-06-04T12:46:58Z",
-   "repository": {
-    "nameWithOwner": "openmrs/openmrs-esm-template-app",
-    "isPrivate": false,
-    "owner": {
-     "login": "openmrs"
-    }
-   }
   }
  ],
  "contributedRepos": 27,
- "lifetime": 567,
- "lifetimeCommits": 404,
+ "lifetime": 575,
+ "lifetimeCommits": 411,
  "year": {
-  "total": 515,
-  "commits": 361,
-  "prs": 119,
+  "total": 523,
+  "commits": 368,
+  "prs": 120,
   "reviews": 0
  },
  "days": [
@@ -2037,7 +1998,7 @@
   },
   {
    "date": "2026-11-04",
-   "count": 10,
+   "count": 18,
    "weekday": 3
   }
  ],
@@ -2050,58 +2011,58 @@
    "name": "Java",
    "size": 2558273,
    "color": "#b07219",
-   "pct": 52.96280577684295
+   "pct": 52.960251134807955
   },
   {
    "name": "TypeScript",
-   "size": 938836,
+   "size": 939069,
    "color": "#3178c6",
-   "pct": 19.436310637804535
+   "pct": 19.440196598608896
   },
   {
    "name": "Python",
    "size": 465066,
    "color": "#3572A5",
-   "pct": 9.628057768429422
+   "pct": 9.627593362499077
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 8.745983702943077
+   "pct": 8.74556184354048
   },
   {
    "name": "JavaScript",
    "size": 333429,
    "color": "#f1e05a",
-   "pct": 6.902834594809454
+   "pct": 6.902501639046296
   },
   {
    "name": "CSS",
    "size": 89968,
    "color": "#663399",
-   "pct": 1.8625681114294703
+   "pct": 1.8624782711213397
   },
   {
    "name": "HTML",
    "size": 17478,
    "color": "#e34c26",
-   "pct": 0.36183938124182247
+   "pct": 0.3618219280484036
   },
   {
    "name": "Dockerfile",
    "size": 4107,
    "color": "#384d54",
-   "pct": 0.08502542274631908
+   "pct": 0.08502132157539727
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.014574603752960465
+   "pct": 0.014573900752149909
   }
  ],
- "langBytes": 4830320,
+ "langBytes": 4830553,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

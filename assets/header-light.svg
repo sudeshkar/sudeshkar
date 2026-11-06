@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="Sathieskumar Sudeshkar, full-stack software engineer in Sri Lanka">
 <title>Sathieskumar Sudeshkar, full-stack software engineer in Sri Lanka</title>
 <defs>
-  <clipPath id="field"><rect width="1000" height="320"/></clipPath>
+  <clipPath id="field"><rect width="1000" height="320" rx="22" ry="22"/></clipPath>
   <radialGradient id="warm" cx="0.72" cy="0.45" r="0.75">
     <stop offset="0" stop-color="#7a4128"/>
     <stop offset="0.55" stop-color="#3d2014"/>

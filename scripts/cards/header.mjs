@@ -33,7 +33,7 @@ export function header(_theme, data) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(data.name)}, full-stack software engineer in Sri Lanka">
 <title>${esc(data.name)}, full-stack software engineer in Sri Lanka</title>
 <defs>
-  <clipPath id="field"><rect width="${W}" height="${H}"/></clipPath>
+  <clipPath id="field"><rect width="${W}" height="${H}" rx="22" ry="22"/></clipPath>
   <radialGradient id="warm" cx="0.72" cy="0.45" r="0.75">
     <stop offset="0" stop-color="${C.glow}"/>
     <stop offset="0.55" stop-color="${C.mid}"/>

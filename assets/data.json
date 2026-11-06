@@ -1,14 +1,28 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-06T06:41:29.612Z",
+ "generatedAt": "2026-11-06T18:53:18.955Z",
  "followers": 2,
  "repoCount": 23,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 103,
- "externalMergedPRs": 12,
+ "mergedPRs": 15,
+ "selfMergedPRs": 93,
+ "externalMergedPRs": 15,
  "externalPRs": [
+  {
+   "number": 879,
+   "title": "(fix) O3-6104: Show an error state when lab orders fail to load",
+   "url": "https://github.com/openmrs/openmrs-esm-laboratory-app/pull/879",
+   "mergedAt": "2026-11-02T12:53:08Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-laboratory-app",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 92,
    "title": "(feat) O3-6153: Add Carbon footer to the security dashboard",
@@ -36,12 +50,12 @@
    }
   },
   {
-   "number": 879,
-   "title": "(fix) O3-6104: Show an error state when lab orders fail to load",
-   "url": "https://github.com/openmrs/openmrs-esm-laboratory-app/pull/879",
-   "mergedAt": "2026-11-02T12:53:08Z",
+   "number": 435,
+   "title": "(feat) O3-5995: Improve packages table column order and workspace action placement",
+   "url": "https://github.com/openmrs/openmrs-esm-admin-tools/pull/435",
+   "mergedAt": "2026-10-15T11:46:05Z",
    "repository": {
-    "nameWithOwner": "openmrs/openmrs-esm-laboratory-app",
+    "nameWithOwner": "openmrs/openmrs-esm-admin-tools",
     "isPrivate": false,
     "owner": {
      "login": "openmrs"
@@ -101,19 +115,6 @@
    }
   },
   {
-   "number": 435,
-   "title": "(feat) O3-5995: Improve packages table column order and workspace action placement",
-   "url": "https://github.com/openmrs/openmrs-esm-admin-tools/pull/435",
-   "mergedAt": "2026-10-15T11:46:05Z",
-   "repository": {
-    "nameWithOwner": "openmrs/openmrs-esm-admin-tools",
-    "isPrivate": false,
-    "owner": {
-     "login": "openmrs"
-    }
-   }
-  },
-  {
    "number": 816,
    "title": "(fix) O3-5963: Improve contrast and anchoring of remove-attachment btn",
    "url": "https://github.com/openmrs/openmrs-esm-form-engine-lib/pull/816",
@@ -164,15 +165,54 @@
      "login": "openmrs"
     }
    }
+  },
+  {
+   "number": 1734,
+   "title": "(fix) O3-5588: Correctly apply Login Location tag filter in useLocationCount",
+   "url": "https://github.com/openmrs/openmrs-esm-core/pull/1734",
+   "mergedAt": "2026-06-05T09:44:06Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-core",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
+  {
+   "number": 255,
+   "title": "(docs) Improve README setup instructions",
+   "url": "https://github.com/openmrs/openmrs-esm-template-app/pull/255",
+   "mergedAt": "2026-06-04T12:46:58Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-template-app",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
+  {
+   "number": 250,
+   "title": "(chore) Fix typo in README",
+   "url": "https://github.com/openmrs/openmrs-esm-admin-tools/pull/250",
+   "mergedAt": "2026-04-03T19:11:20Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-admin-tools",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
   }
  ],
  "contributedRepos": 27,
- "lifetime": 575,
- "lifetimeCommits": 411,
+ "lifetime": 592,
+ "lifetimeCommits": 423,
  "year": {
-  "total": 523,
-  "commits": 368,
-  "prs": 120,
+  "total": 540,
+  "commits": 380,
+  "prs": 125,
   "reviews": 0
  },
  "days": [
@@ -1998,71 +2038,71 @@
   },
   {
    "date": "2026-11-06",
-   "count": 0,
+   "count": 17,
    "weekday": 5
   }
  ],
  "activeWeeks": 25,
  "weekCount": 53,
- "current": 0,
+ "current": 1,
  "longest": 8,
  "languages": [
   {
    "name": "Java",
    "size": 2558273,
    "color": "#b07219",
-   "pct": 52.960251134807955
+   "pct": 52.718743985284846
   },
   {
    "name": "TypeScript",
-   "size": 939069,
+   "size": 940101,
    "color": "#3178c6",
-   "pct": 19.440196598608896
+   "pct": 19.372812807433085
   },
   {
    "name": "Python",
-   "size": 465066,
+   "size": 479699,
    "color": "#3572A5",
-   "pct": 9.627593362499077
+   "pct": 9.885234598104718
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 8.74556184354048
+   "pct": 8.705680693686501
   },
   {
    "name": "JavaScript",
-   "size": 333429,
+   "size": 334605,
    "color": "#f1e05a",
-   "pct": 6.902501639046296
+   "pct": 6.895259157719382
   },
   {
    "name": "CSS",
    "size": 89968,
    "color": "#663399",
-   "pct": 1.8624782711213397
+   "pct": 1.8539850746453197
   },
   {
    "name": "HTML",
    "size": 17478,
    "color": "#e34c26",
-   "pct": 0.3618219280484036
+   "pct": 0.3601719626383925
   },
   {
    "name": "Dockerfile",
-   "size": 4107,
+   "size": 9395,
    "color": "#384d54",
-   "pct": 0.08502132157539727
+   "pct": 0.1936042790357992
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.014573900752149909
+   "pct": 0.014507441451964089
   }
  ],
- "langBytes": 4830553,
+ "langBytes": 4852682,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

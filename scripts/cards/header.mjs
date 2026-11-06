@@ -63,7 +63,7 @@ export function header(_theme, data) {
   <text class="regular in" x="48" y="184" font-size="15" fill="${C.paper}" fill-opacity="0.82" style="animation-delay:.35s">Full-stack engineer in Sri Lanka, working in Java, Spring Boot, C# and React.</text>
 
   <g>
-    <text class="display name" x="40" y="${H + 6}" font-size="154" fill="${C.peach}" letter-spacing="-1">${esc(surname)}</text>
+    <text class="display name" x="44" y="${H - 20}" font-size="140" fill="${C.peach}" letter-spacing="-1">${esc(surname)}</text>
   </g>
 
   ${

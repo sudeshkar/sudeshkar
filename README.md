@@ -16,6 +16,8 @@
 <p align="center">
   <a href="https://portfolio-v3-chi-cyan.vercel.app/"><b>Portfolio</b></a>
   &emsp;
+  <a href="https://portfolio-v3-chi-cyan.vercel.app/systems"><b>System design labs</b></a>
+  &emsp;
   <a href="https://www.linkedin.com/in/sathieskumar-sudeshkar"><b>LinkedIn</b></a>
   &emsp;
   <a href="mailto:sudeshkar008sk@gmail.com"><b>Email</b></a>
@@ -31,9 +33,13 @@
 
 <br>
 
-I spend most of my day on the server side: **Java 21 and Spring Boot**, **C# and ASP.NET Core**, and the **React and TypeScript** interfaces that sit on top of them. I'm a Full Stack Developer Trainee at **Variosystems**, building internal business tooling in Blazor WebAssembly, and I graduated from **Cardiff Metropolitan University** in December 2025 with a BSc (Hons) in Software Engineering, Second Class Upper.
+I spend most of my day on the server side: **Java 21 and Spring Boot**, **C# and ASP.NET Core**, and the **React and TypeScript** interfaces that sit on top of them. I'm a Full Stack Developer Trainee at **Variosystems**, building internal business tooling in Blazor WebAssembly, and I hold a BSc (Hons) Computing in Software Engineering, Second Class Upper, from **Cardiff Metropolitan University** (completed November 2025, graduated February 2026).
 
 Outside work I fix things in **[OpenMRS](https://openmrs.org)**, the open-source medical record system that health services in more than 40 countries run on. Fifteen of those changes have been merged so far.
+
+My focus is **system design**, which I learn by building. Transactional outboxes, idempotency, optimistic locking and rate limiting are already in my projects. Right now I'm learning how load balancers work with Nginx: algorithms like round robin, and where one belongs, L7 when routing needs intelligence and L4 when it needs speed. You can try [a live load balancer and rate limiter](https://portfolio-v3-chi-cyan.vercel.app/systems) on my portfolio.
+
+I use Claude Code and agents to code efficiently, and I've been exploring Jev and [DeepSeek's super agent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype).
 
 What I care about: layered architecture, REST APIs that are boring to consume, and concurrency bugs caught by a test rather than by a customer.
 
@@ -79,10 +85,11 @@ A two-hub airline booking platform (Dubai DXB and DWC): search, seat selection w
 
 `Java 25` `Spring Boot 4` `Kafka` `PostgreSQL` `Redis` `Next.js` `Python`
 
-- Four services (flight search, booking, notification, disruption agent) with a database each and 84 written architecture decisions
+- Four services (flight search, booking, notification, disruption agent) with a database each and 83 written architecture decisions
 - Seats never double-sell: ten threads race for one seat in a test and exactly one wins
 - Transactional outbox to Kafka, idempotent payments with refund on failure, and an AI agent whose proposals are verified by code and approved by a person
 - Search went from 1,558 to 9,085 requests/s with an in-memory timetable
+- Sliding-window rate limiting in Redis at the edge, retry topics and dead-letter replay
 
 </td>
 <td width="50%" valign="top">
@@ -125,7 +132,7 @@ A B2B marketplace that replaces phone-and-WhatsApp fish ordering between supplie
 
 - Optimistic locking on stock, proven by a test where two 60 kg orders against 100 kg would otherwise both succeed
 - A matching engine that ranks supply by freshness, then supplier reliability
-- 54 documented endpoints, rotating refresh tokens, 99 tests against real PostgreSQL and Redis in CI
+- 54 documented endpoints, token-bucket rate limiting, rotating refresh tokens, 99 tests against real PostgreSQL and Redis in CI
 
 [Frontend](https://github.com/sudeshkar/FreshLink-Frontend) &emsp; [Write-up](https://medium.com/@sudeshkar008sk/i-got-to-the-fish-market-too-late-so-i-built-a-backend-ca8b8b8d623e)
 
@@ -171,6 +178,8 @@ My final-year project: a desktop app that learns when you lose focus and suggest
 | **Backend** | Spring Boot, Spring Security, Spring Data JPA, ASP.NET Core, FastAPI, REST API design, JWT and OAuth2 |
 | **Frontend** | React, Next.js, Blazor WebAssembly, Tailwind CSS, Carbon Design System |
 | **Data** | PostgreSQL, MySQL, SQL Server, Redis, Kafka, Chroma, pandas, scikit-learn |
+| **System design** | Transactional outbox, idempotency keys, optimistic locking, caching, rate limiting, event-driven design, observability. Learning: load balancing with Nginx, L4 and L7 |
+| **AI** | RAG and hybrid search, retrieval evaluation, Jev typed model calls, agents with human approval, MCP, Claude Code and coding agents. Exploring: LangChain, LangGraph, DeepSeek super agent |
 | **Tooling** | Git, Docker, GitHub Actions, Maven, Testcontainers, Prometheus and Grafana, Postman, Google Cloud |
 
 ## Experience
@@ -185,8 +194,8 @@ Internal workspace tooling in Blazor .NET WebAssembly with MVVM, from the compon
 
 Fifteen merged pull requests across ten repositories, from the Java core to the O3 React micro-frontends: lab orders, dashboards, medication forms, patient charts, login and the security-scanning dashboard.
 
-**BSc (Hons) Software Engineering, Second Class Upper**, Cardiff Metropolitan University
-<br><sub>Graduated December 2025</sub>
+**BSc (Hons) Computing in Software Engineering, Second Class Upper**, Cardiff Metropolitan University
+<br><sub>Completed November 2025, graduated February 2026</sub>
 
 ## Activity
 

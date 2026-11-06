@@ -1,9 +1,9 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-06T22:11:53.424Z",
+ "generatedAt": "2026-11-06T22:12:43.226Z",
  "followers": 2,
- "repoCount": 29,
+ "repoCount": 23,
  "stars": 0,
  "forks": 0,
  "mergedPRs": 15,
@@ -528,22 +528,22 @@
   },
   {
    "date": "2026-01-08",
-   "count": 0,
+   "count": 1,
    "weekday": 4
   },
   {
    "date": "2026-01-09",
-   "count": 7,
+   "count": 6,
    "weekday": 5
   },
   {
    "date": "2026-01-10",
-   "count": 0,
+   "count": 1,
    "weekday": 6
   },
   {
    "date": "2026-01-11",
-   "count": 3,
+   "count": 2,
    "weekday": 0
   },
   {
@@ -928,12 +928,12 @@
   },
   {
    "date": "2026-03-29",
-   "count": 3,
+   "count": 5,
    "weekday": 0
   },
   {
    "date": "2026-03-30",
-   "count": 5,
+   "count": 3,
    "weekday": 1
   },
   {
@@ -1238,12 +1238,12 @@
   },
   {
    "date": "2026-05-30",
-   "count": 0,
+   "count": 1,
    "weekday": 6
   },
   {
    "date": "2026-05-31",
-   "count": 2,
+   "count": 1,
    "weekday": 0
   },
   {
@@ -1973,12 +1973,12 @@
   },
   {
    "date": "2026-10-24",
-   "count": 2,
+   "count": 4,
    "weekday": 6
   },
   {
    "date": "2026-10-25",
-   "count": 8,
+   "count": 6,
    "weekday": 0
   },
   {
@@ -2042,73 +2042,67 @@
    "weekday": 5
   }
  ],
- "activeWeeks": 24,
+ "activeWeeks": 25,
  "weekCount": 53,
  "current": 1,
- "longest": 7,
+ "longest": 8,
  "languages": [
   {
    "name": "Java",
    "size": 2558273,
    "color": "#b07219",
-   "pct": 47.7753944504287
+   "pct": 52.715724011737166
   },
   {
    "name": "TypeScript",
-   "size": 1256074,
+   "size": 940101,
    "color": "#3178c6",
-   "pct": 23.45700822739707
-  },
-  {
-   "name": "JavaScript",
-   "size": 501572,
-   "color": "#f1e05a",
-   "pct": 9.366787729570076
+   "pct": 19.371703043091227
   },
   {
    "name": "Python",
-   "size": 479882,
+   "size": 479699,
    "color": "#3572A5",
-   "pct": 8.961729979427773
+   "pct": 9.884668326134978
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 7.889363396374686
+   "pct": 8.705181992021364
+  },
+  {
+   "name": "JavaScript",
+   "size": 334883,
+   "color": "#f1e05a",
+   "pct": 6.900592628004352
   },
   {
    "name": "CSS",
-   "size": 102867,
+   "size": 89968,
    "color": "#663399",
-   "pct": 1.921026997874054
+   "pct": 1.8538788698031716
   },
   {
    "name": "HTML",
-   "size": 20824,
+   "size": 17478,
    "color": "#e34c26",
-   "pct": 0.3888853199153207
+   "pct": 0.36015133032211266
   },
   {
    "name": "Dockerfile",
    "size": 9395,
    "color": "#384d54",
-   "pct": 0.1754503256148885
-  },
-  {
-   "name": "PLpgSQL",
-   "size": 2742,
-   "color": "#336790",
-   "pct": 0.05120647076487752
+   "pct": 0.19359318848702647
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.013147102632557903
+   "pct": 0.01450661039860209
   }
  ],
- "langBytes": 5354792,
+ "langBytes": 4852960,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

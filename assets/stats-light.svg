@@ -43,15 +43,15 @@
 </g>
 <g class="in" style="animation-delay:0.36s">
   <rect x="592.6" y="40" width="1" height="104" fill="#e4dccf"/>
-  <text class="display" x="615.6" y="98" font-size="62" letter-spacing="-1" fill="#000000">24</text>
+  <text class="display" x="615.6" y="98" font-size="62" letter-spacing="-1" fill="#000000">25</text>
   <text class="semibold" x="615.6" y="122" font-size="14" fill="#151413">active weeks</text>
   <text class="regular" x="615.6" y="141" font-size="12.5" fill="#6b655f">out of the last 53</text>
 </g>
 <g class="in" style="animation-delay:0.44s">
   <rect x="779.8" y="40" width="1" height="104" fill="#e4dccf"/>
-  <text class="display" x="802.8" y="98" font-size="62" letter-spacing="-1" fill="#000000">29</text>
+  <text class="display" x="802.8" y="98" font-size="62" letter-spacing="-1" fill="#000000">23</text>
   <text class="semibold" x="802.8" y="122" font-size="14" fill="#151413">public repositories</text>
-  <text class="regular" x="802.8" y="141" font-size="12.5" fill="#6b655f">10 languages between them</text>
+  <text class="regular" x="802.8" y="141" font-size="12.5" fill="#6b655f">9 languages between them</text>
 </g>
 <rect x="0.5" y="0.5" width="999" height="175" fill="none" stroke="#e4dccf"/>
 </svg>

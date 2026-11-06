@@ -6,7 +6,7 @@ const PAD = 28
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const FULL = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-// Seven columns, Monday first. The busiest day is the only crimson one.
+// Seven columns, Monday first. The busiest day is the only accent-coloured one.
 export function rhythm(theme, d) {
   const t = THEMES[theme]
   const totals = Array(7).fill(0)

@@ -6,7 +6,7 @@ const PAD = 28
 const TOP = 6
 
 // One measure per language: a hairline track with the share drawn over it. Only the
-// leading language is in crimson; the rest stay in ink so the order reads at a glance.
+// leading language is in the accent colour; the rest stay in ink so the order reads at a glance.
 export function languages(theme, d) {
   const t = THEMES[theme]
   const rows = d.languages.slice(0, TOP).map((l) => ({ name: l.name, pct: l.pct }))

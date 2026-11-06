@@ -2,39 +2,46 @@ import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// The same tokens as the portfolio (portfolio-v3/src/index.css), so the profile and
-// the site read as one identity: a crimson field, cream paper, black ink.
+// The same tokens as the portfolio (portfolio-v4/src/index.css), so the profile and
+// the site read as one identity: warm paper, a peach name, a dark terracotta field.
 // Two palettes so the README can serve a real light and dark asset through <picture>.
 export const THEMES = {
   dark: {
     id: 'dark',
-    paper: '#000000',
-    ink: '#f2ede4',
+    paper: '#151413',
+    ink: '#faf6ef',
     inkStrong: '#ffffff',
-    muted: '#9b958d',
-    rule: '#2a2622',
-    ruleStrong: '#4a443e',
-    accent: '#f2321c',
-    accentDeep: '#d01029',
-    empty: '#16130f',
-    ramp: ['#4a0a14', '#8a0c1f', '#d01029', '#f2321c'],
+    muted: '#a8a29b',
+    rule: '#2d2925',
+    ruleStrong: '#4d4640',
+    accent: '#efbfa3',
+    accentDeep: '#ee8f63',
+    empty: '#231f1b',
+    ramp: ['#54301f', '#935436', '#ee8f63', '#efbfa3'],
   },
   light: {
     id: 'light',
-    paper: '#f2ede4',
-    ink: '#1c1a17',
+    paper: '#faf6ef',
+    ink: '#151413',
     inkStrong: '#000000',
-    muted: '#5b5650',
-    rule: '#d9d1c3',
-    ruleStrong: '#b5ab9b',
-    accent: '#d01029',
-    accentDeep: '#6e0715',
-    empty: '#e6dfd2',
-    ramp: ['#f1b3ba', '#e4596b', '#d01029', '#6e0715'],
+    muted: '#6b655f',
+    rule: '#e4dccf',
+    ruleStrong: '#c4b9a8',
+    accent: '#b9552a',
+    accentDeep: '#7a4128',
+    empty: '#f1eadf',
+    ramp: ['#f6d9c7', '#efbfa3', '#ee8f63', '#b9552a'],
   },
 }
 
-export const CRIMSON = { field: '#d01029', hot: '#f2321c', deep: '#6e0715', ink: '#3d040c', bone: '#ffffff', cream: '#f2ede4' }
+export const FIELD = {
+  edge: '#2b1710',
+  mid: '#3d2014',
+  glow: '#7a4128',
+  peach: '#efbfa3',
+  paper: '#faf6ef',
+  bone: '#ffffff',
+}
 
 // GitHub serves README SVGs through <img>, which may not fetch anything, so Archivo
 // has to travel inside each file. The subsets in assets/fonts are static instances of

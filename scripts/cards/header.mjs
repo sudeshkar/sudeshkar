@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { CRIMSON as C, fonts, MOTION, EASE, esc } from '../theme.mjs'
+import { FIELD as C, fonts, MOTION, EASE, esc } from '../theme.mjs'
 
 // GitHub renders this SVG through <img> in a sandbox that blocks every external
 // fetch, so the portrait travels inside the file. If it is ever missing, the name
@@ -24,8 +24,8 @@ const PW = Math.round((560 / 554) * PH)
 const PX = W - PW
 const PY = H - PH
 
-// The poster is the same in both themes: the crimson field is the identity, and it
-// holds up against GitHub's white and its near-black alike.
+// The poster is the same in both themes: the warm dark field and peach name are the
+// identity, and they hold up against GitHub's white and its near-black alike.
 export function header(_theme, data) {
   const surname = (data.name || 'Sathieskumar Sudeshkar').split(' ').pop().toUpperCase()
   const given = (data.name || 'Sathieskumar Sudeshkar').split(' ').slice(0, -1).join(' ')
@@ -34,6 +34,11 @@ export function header(_theme, data) {
 <title>${esc(data.name)}, full-stack software engineer in Sri Lanka</title>
 <defs>
   <clipPath id="field"><rect width="${W}" height="${H}"/></clipPath>
+  <radialGradient id="warm" cx="0.72" cy="0.45" r="0.75">
+    <stop offset="0" stop-color="${C.glow}"/>
+    <stop offset="0.55" stop-color="${C.mid}"/>
+    <stop offset="1" stop-color="${C.edge}"/>
+  </radialGradient>
   <linearGradient id="edgeFade" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#fff" stop-opacity="0"/>
     <stop offset="0.09" stop-color="#fff" stop-opacity="1"/>
@@ -50,15 +55,15 @@ export function header(_theme, data) {
   </style>
 </defs>
 <g clip-path="url(#field)">
-  <rect width="${W}" height="${H}" fill="${C.field}"/>
+  <rect width="${W}" height="${H}" fill="url(#warm)"/>
 
   <text class="semibold in" x="48" y="64" font-size="22" fill="${C.bone}" style="animation-delay:.05s">${esc(given)}</text>
   <text class="regular in" x="48" y="112" font-size="30" fill="${C.bone}" letter-spacing="-0.4" style="animation-delay:.2s">I build backends that</text>
   <text class="regular in" x="48" y="148" font-size="30" fill="${C.bone}" letter-spacing="-0.4" style="animation-delay:.2s">survive production.</text>
-  <text class="regular in" x="48" y="184" font-size="15" fill="${C.cream}" fill-opacity="0.82" style="animation-delay:.35s">Full-stack engineer in Sri Lanka, working in Java, Spring Boot, C# and React.</text>
+  <text class="regular in" x="48" y="184" font-size="15" fill="${C.paper}" fill-opacity="0.82" style="animation-delay:.35s">Full-stack engineer in Sri Lanka, working in Java, Spring Boot, C# and React.</text>
 
   <g>
-    <text class="display name" x="40" y="${H + 6}" font-size="154" fill="${C.ink}" letter-spacing="-1">${esc(surname)}</text>
+    <text class="display name" x="40" y="${H + 6}" font-size="154" fill="${C.peach}" letter-spacing="-1">${esc(surname)}</text>
   </g>
 
   ${

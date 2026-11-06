@@ -33,7 +33,7 @@
 
 I spend most of my day on the server side: **Java 21 and Spring Boot**, **C# and ASP.NET Core**, and the **React and TypeScript** interfaces that sit on top of them. I'm a Full Stack Developer Trainee at **Variosystems**, building internal business tooling in Blazor WebAssembly, and I graduated from **Cardiff Metropolitan University** in December 2025 with a BSc (Hons) in Software Engineering, Second Class Upper.
 
-Outside work I fix things in **[OpenMRS](https://openmrs.org)**, the open-source medical record system that health services in more than 40 countries run on. Eleven of those fixes have been merged so far.
+Outside work I fix things in **[OpenMRS](https://openmrs.org)**, the open-source medical record system that health services in more than 40 countries run on. Fifteen of those changes have been merged so far.
 
 What I care about: layered architecture, REST APIs that are boring to consume, and concurrency bugs caught by a test rather than by a customer.
 
@@ -51,6 +51,10 @@ Every change below went through OpenMRS code review and was merged upstream. New
 
 | Merged | Pull request | What changed |
 | :--- | :--- | :--- |
+| Nov 2026 | [`laboratory` #879](https://github.com/openmrs/openmrs-esm-laboratory-app/pull/879) | The lab worklist shows an error state when orders fail to load, instead of an empty table |
+| Oct 2026 | [`cvss-scanning` #92](https://github.com/openmrs/openmrs-contrib-cvss-scanning/pull/92) | The security dashboard gets the Carbon footer |
+| Oct 2026 | [`cvss-scanning` #91](https://github.com/openmrs/openmrs-contrib-cvss-scanning/pull/91) | The security dashboard gets the Carbon top navigation bar |
+| Oct 2026 | [`admin-tools` #435](https://github.com/openmrs/openmrs-esm-admin-tools/pull/435) | The packages table has a clearer column order, with workspace actions placed where you expect them |
 | Oct 2026 | [`stock-management` #683](https://github.com/openmrs/openmrs-esm-stock-management-app/pull/683) | The stock management dashboard no longer runs off the screen on tablets |
 | Oct 2026 | [`patient-management` #2823](https://github.com/openmrs/openmrs-esm-patient-management/pull/2823) | Home dashboards stay inside a tablet screen, so their action buttons can be reached |
 | Oct 2026 | [`laboratory` #878](https://github.com/openmrs/openmrs-esm-laboratory-app/pull/878) | The lab worklist reads every page of orders, not just the first 50 |
@@ -66,6 +70,35 @@ Every change below went through OpenMRS code review and was merged upstream. New
 ## Selected work
 
 <table>
+<tr>
+<td width="50%" valign="top">
+
+### [SkyHub](https://github.com/sudeshkar/SkyHub)
+
+A two-hub airline booking platform (Dubai DXB and DWC): search, seat selection with timed holds, payment, booking management and online check-in. A portfolio project built the way a production system would be.
+
+`Java 25` `Spring Boot 4` `Kafka` `PostgreSQL` `Redis` `Next.js` `Python`
+
+- Four services (flight search, booking, notification, disruption agent) with a database each and 84 written architecture decisions
+- Seats never double-sell: ten threads race for one seat in a test and exactly one wins
+- Transactional outbox to Kafka, idempotent payments with refund on failure, and an AI agent whose proposals are verified by code and approved by a person
+- Search went from 1,558 to 9,085 requests/s with an in-memory timetable
+
+</td>
+<td width="50%" valign="top">
+
+### [DocBot](https://github.com/sudeshkar/docbot-rag)
+
+A multi-tenant RAG support-bot SaaS: upload docs or crawl a site and get an embeddable chat widget that answers with citations, and tracks the questions your docs could not answer.
+
+`Python` `FastAPI` `Next.js` `Chroma` `PostgreSQL` `Redis` `Claude`
+
+- Hybrid retrieval: Chroma vectors plus Postgres full-text search, fused with Reciprocal Rank Fusion
+- Four chunking strategies, compared on a golden set by recall@k and MRR
+- Per-bot isolation, an SSRF-safe crawler, prompt-injection escaping and origin-allowlisted widget
+
+</td>
+</tr>
 <tr>
 <td width="50%" valign="top">
 
@@ -135,10 +168,10 @@ My final-year project: a desktop app that learns when you lose focus and suggest
 | | |
 | :--- | :--- |
 | **Languages** | Java, C#, TypeScript, JavaScript, Python, SQL |
-| **Backend** | Spring Boot, Spring Security, Spring Data JPA, ASP.NET Core, REST API design, JWT and OAuth2 |
-| **Frontend** | React, Blazor WebAssembly, Tailwind CSS, Carbon Design System |
-| **Data** | PostgreSQL, MySQL, SQL Server, Redis, pandas, scikit-learn |
-| **Tooling** | Git, Docker, GitHub Actions, Maven, Postman, Google Cloud |
+| **Backend** | Spring Boot, Spring Security, Spring Data JPA, ASP.NET Core, FastAPI, REST API design, JWT and OAuth2 |
+| **Frontend** | React, Next.js, Blazor WebAssembly, Tailwind CSS, Carbon Design System |
+| **Data** | PostgreSQL, MySQL, SQL Server, Redis, Kafka, Chroma, pandas, scikit-learn |
+| **Tooling** | Git, Docker, GitHub Actions, Maven, Testcontainers, Prometheus and Grafana, Postman, Google Cloud |
 
 ## Experience
 
@@ -150,7 +183,7 @@ Internal workspace tooling in Blazor .NET WebAssembly with MVVM, from the compon
 **Open Source Contributor**, OpenMRS
 <br><sub>January 2026 to now</sub>
 
-Eleven merged pull requests across nine repositories, from the Java core to the O3 React micro-frontends: lab orders, dashboards, medication forms, patient charts and login.
+Fifteen merged pull requests across ten repositories, from the Java core to the O3 React micro-frontends: lab orders, dashboards, medication forms, patient charts, login and the security-scanning dashboard.
 
 **BSc (Hons) Software Engineering, Second Class Upper**, Cardiff Metropolitan University
 <br><sub>Graduated December 2025</sub>

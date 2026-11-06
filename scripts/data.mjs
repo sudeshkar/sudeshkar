@@ -50,9 +50,6 @@ query ($login: String!, $from: DateTime!, $to: DateTime!) {
       }
     }
     pullRequests(states: MERGED) { totalCount }
-    mergedExternal: pullRequests(first: 100, states: MERGED, orderBy: {field: CREATED_AT, direction: DESC}) {
-      nodes { number title url mergedAt repository { nameWithOwner isPrivate owner { login } } }
-    }
     issues { totalCount }
     window: contributionsCollection(from: $from, to: $to) {
       totalCommitContributions
@@ -67,6 +64,36 @@ query ($login: String!, $from: DateTime!, $to: DateTime!) {
     }
   }
 }`
+
+// Merged PRs to repositories this person does not own. A search is used instead of
+// user.pullRequests because that connection is newest-first and capped at 100 per page:
+// once a personal repo collects dozens of self-merged PRs they crowd out older upstream
+// work. Paginated so the count stays right however many PRs there are.
+const EXTERNAL_QUERY = `
+query ($q: String!, $after: String) {
+  search(query: $q, type: ISSUE, first: 100, after: $after) {
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      ... on PullRequest {
+        number title url mergedAt
+        repository { nameWithOwner isPrivate owner { login } }
+      }
+    }
+  }
+}`
+
+async function externalMerged(login, token) {
+  const q = `author:${login} is:pr is:merged is:public -user:${login} sort:updated-desc`
+  const out = []
+  let after = null
+  for (let page = 0; page < 10; page++) {
+    const d = await gql(EXTERNAL_QUERY, { q, after }, token)
+    out.push(...d.search.nodes.filter((n) => n && n.number))
+    if (!d.search.pageInfo.hasNextPage) break
+    after = d.search.pageInfo.endCursor
+  }
+  return out.sort((a, b) => b.mergedAt.localeCompare(a.mergedAt))
+}
 
 const YEAR_QUERY = `
 query ($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -151,7 +178,7 @@ export async function collect(login, token) {
   ).length
   const weekCount = u.window.contributionCalendar.weeks.length
 
-  const external = u.mergedExternal.nodes.filter(
+  const external = (await externalMerged(login, token)).filter(
     (p) => !p.repository.isPrivate && p.repository.owner.login.toLowerCase() !== login.toLowerCase(),
   )
 
@@ -163,7 +190,10 @@ export async function collect(login, token) {
     repoCount: u.repositories.totalCount,
     stars: u.repositories.nodes.reduce((a, r) => a + r.stargazerCount, 0),
     forks: u.repositories.nodes.reduce((a, r) => a + r.forkCount, 0),
-    mergedPRs: u.pullRequests.totalCount,
+    // Headline figure: work accepted upstream. Self-merged PRs in personal repos are
+    // kept separately and not shown, since they are not review-gated contributions.
+    mergedPRs: external.length,
+    selfMergedPRs: u.pullRequests.totalCount - external.length,
     externalMergedPRs: external.length,
     externalPRs: external,
     contributedRepos: u.window.totalRepositoriesWithContributedCommits,

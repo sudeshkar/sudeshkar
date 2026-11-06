@@ -8,12 +8,13 @@ import { stats } from './cards/stats.mjs'
 import { languages } from './cards/languages.mjs'
 import { activity } from './cards/activity.mjs'
 import { rhythm } from './cards/rhythm.mjs'
+import { chat } from './cards/chat.mjs'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = join(ROOT, 'assets')
 const SNAPSHOT = join(OUT, 'data.json')
 
-const CARDS = { header, stats, languages, activity, rhythm }
+const CARDS = { header, chat, stats, languages, activity, rhythm }
 
 const login = process.env.PROFILE_LOGIN || 'sudeshkar'
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN

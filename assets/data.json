@@ -1,9 +1,9 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-07T12:58:23.236Z",
+ "generatedAt": "2026-11-07T21:48:24.664Z",
  "followers": 2,
- "repoCount": 23,
+ "repoCount": 22,
  "stars": 0,
  "forks": 0,
  "mergedPRs": 15,
@@ -206,12 +206,12 @@
    }
   }
  ],
- "contributedRepos": 27,
- "lifetime": 600,
- "lifetimeCommits": 431,
+ "contributedRepos": 26,
+ "lifetime": 574,
+ "lifetimeCommits": 406,
  "year": {
-  "total": 548,
-  "commits": 388,
+  "total": 522,
+  "commits": 363,
   "prs": 125,
   "reviews": 0
  },
@@ -1533,7 +1533,7 @@
   },
   {
    "date": "2026-07-29",
-   "count": 17,
+   "count": 4,
    "weekday": 3
   },
   {
@@ -1643,7 +1643,7 @@
   },
   {
    "date": "2026-08-20",
-   "count": 16,
+   "count": 12,
    "weekday": 4
   },
   {
@@ -1798,12 +1798,12 @@
   },
   {
    "date": "2026-09-20",
-   "count": 8,
+   "count": 7,
    "weekday": 0
   },
   {
    "date": "2026-09-21",
-   "count": 6,
+   "count": 2,
    "weekday": 1
   },
   {
@@ -1918,7 +1918,7 @@
   },
   {
    "date": "2026-10-14",
-   "count": 7,
+   "count": 4,
    "weekday": 3
   },
   {
@@ -1953,7 +1953,7 @@
   },
   {
    "date": "2026-10-21",
-   "count": 1,
+   "count": 0,
    "weekday": 3
   },
   {
@@ -2051,58 +2051,58 @@
    "name": "Java",
    "size": 2558273,
    "color": "#b07219",
-   "pct": 52.7155502108397
+   "pct": 53.724001082765405
   },
   {
    "name": "TypeScript",
    "size": 940101,
    "color": "#3178c6",
-   "pct": 19.371639175631614
+   "pct": 19.742219513675373
   },
   {
    "name": "Python",
    "size": 479699,
    "color": "#3572A5",
-   "pct": 9.884635736916895
+   "pct": 10.073729267909046
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 8.705153291506077
+   "pct": 8.871683269699515
   },
   {
    "name": "JavaScript",
-   "size": 334899,
+   "size": 257361,
    "color": "#f1e05a",
-   "pct": 6.900899571726709
+   "pct": 5.404607968993766
   },
   {
    "name": "CSS",
-   "size": 89968,
+   "size": 79096,
    "color": "#663399",
-   "pct": 1.8538727576645753
+   "pct": 1.6610242885111999
   },
   {
    "name": "HTML",
-   "size": 17478,
+   "size": 14793,
    "color": "#e34c26",
-   "pct": 0.36015014292261077
+   "pct": 0.3106545501662053
   },
   {
    "name": "Dockerfile",
    "size": 9395,
    "color": "#384d54",
-   "pct": 0.19359255022073052
+   "pct": 0.1972959845069627
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.014506562571090398
+   "pct": 0.014784073772528125
   }
  ],
- "langBytes": 4852976,
+ "langBytes": 4761881,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

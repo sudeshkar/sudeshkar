@@ -1,13 +1,13 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-12T00:41:16.979Z",
+ "generatedAt": "2026-11-12T15:12:13.076Z",
  "followers": 2,
- "repoCount": 22,
+ "repoCount": 21,
  "stars": 0,
  "forks": 0,
  "mergedPRs": 15,
- "selfMergedPRs": 95,
+ "selfMergedPRs": 0,
  "externalMergedPRs": 15,
  "externalPRs": [
   {
@@ -206,13 +206,13 @@
    }
   }
  ],
- "contributedRepos": 26,
- "lifetime": 587,
- "lifetimeCommits": 416,
+ "contributedRepos": 25,
+ "lifetime": 254,
+ "lifetimeCommits": 180,
  "year": {
-  "total": 535,
-  "commits": 373,
-  "prs": 128,
+  "total": 202,
+  "commits": 137,
+  "prs": 32,
   "reviews": 0
  },
  "days": [
@@ -1968,22 +1968,22 @@
   },
   {
    "date": "2026-10-29",
-   "count": 59,
+   "count": 2,
    "weekday": 4
   },
   {
    "date": "2026-10-30",
-   "count": 72,
+   "count": 0,
    "weekday": 5
   },
   {
    "date": "2026-10-31",
-   "count": 92,
+   "count": 0,
    "weekday": 6
   },
   {
    "date": "2026-11-01",
-   "count": 16,
+   "count": 0,
    "weekday": 0
   },
   {
@@ -1993,12 +1993,12 @@
   },
   {
    "date": "2026-11-03",
-   "count": 47,
+   "count": 0,
    "weekday": 2
   },
   {
    "date": "2026-11-04",
-   "count": 18,
+   "count": 0,
    "weekday": 3
   },
   {
@@ -2008,12 +2008,12 @@
   },
   {
    "date": "2026-11-06",
-   "count": 17,
+   "count": 0,
    "weekday": 5
   },
   {
    "date": "2026-11-07",
-   "count": 8,
+   "count": 7,
    "weekday": 6
   },
   {
@@ -2028,12 +2028,12 @@
   },
   {
    "date": "2026-11-10",
-   "count": 9,
+   "count": 0,
    "weekday": 2
   },
   {
    "date": "2026-11-11",
-   "count": 4,
+   "count": 0,
    "weekday": 3
   },
   {
@@ -2042,67 +2042,67 @@
    "weekday": 4
   }
  ],
- "activeWeeks": 26,
+ "activeWeeks": 25,
  "weekCount": 53,
- "current": 2,
+ "current": 0,
  "longest": 8,
  "languages": [
   {
    "name": "Java",
-   "size": 2558273,
+   "size": 860489,
    "color": "#b07219",
-   "pct": 53.01699367697859
-  },
-  {
-   "name": "TypeScript",
-   "size": 1000173,
-   "color": "#3178c6",
-   "pct": 20.727328794419016
-  },
-  {
-   "name": "Python",
-   "size": 479699,
-   "color": "#3572A5",
-   "pct": 9.94115907483406
+   "pct": 37.95710109024951
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 8.754931991926858
+   "pct": 18.635123713941397
+  },
+  {
+   "name": "TypeScript",
+   "size": 367067,
+   "color": "#3178c6",
+   "pct": 16.191722643630094
+  },
+  {
+   "name": "Python",
+   "size": 268057,
+   "color": "#3572A5",
+   "pct": 11.824284385911978
   },
   {
    "name": "JavaScript",
-   "size": 257361,
+   "size": 251251,
    "color": "#f1e05a",
-   "pct": 5.333483373236902
+   "pct": 11.0829535369148
   },
   {
    "name": "CSS",
-   "size": 82526,
+   "size": 78077,
    "color": "#663399",
-   "pct": 1.7102476632424826
+   "pct": 3.444060972102387
   },
   {
    "name": "HTML",
    "size": 14793,
    "color": "#e34c26",
-   "pct": 0.30656633887921436
+   "pct": 0.652535240343643
   },
   {
    "name": "Dockerfile",
-   "size": 9395,
+   "size": 4107,
    "color": "#384d54",
-   "pct": 0.194699570997784
+   "pct": 0.1811642149727129
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.014589515485092063
+   "pct": 0.03105420193347696
   }
  ],
- "langBytes": 4825383,
+ "langBytes": 2267004,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

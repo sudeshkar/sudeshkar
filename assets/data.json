@@ -1,15 +1,28 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-13T06:42:29.256Z",
+ "generatedAt": "2026-11-13T19:39:52.843Z",
  "followers": 2,
- "repoCount": 21,
+ "repoCount": 22,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 15,
- "selfMergedPRs": 0,
- "externalMergedPRs": 15,
+ "mergedPRs": 16,
+ "selfMergedPRs": 95,
+ "externalMergedPRs": 16,
  "externalPRs": [
+  {
+   "number": 436,
+   "title": "(fix) O3-6128: Show metadata export build times correctly in non-UTC timezones",
+   "url": "https://github.com/openmrs/openmrs-esm-admin-tools/pull/436",
+   "mergedAt": "2026-11-13T17:15:56Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-admin-tools",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 879,
    "title": "(fix) O3-6104: Show an error state when lab orders fail to load",
@@ -206,13 +219,13 @@
    }
   }
  ],
- "contributedRepos": 25,
- "lifetime": 254,
- "lifetimeCommits": 180,
+ "contributedRepos": 26,
+ "lifetime": 589,
+ "lifetimeCommits": 418,
  "year": {
-  "total": 202,
-  "commits": 137,
-  "prs": 32,
+  "total": 537,
+  "commits": 375,
+  "prs": 128,
   "reviews": 0
  },
  "days": [
@@ -1963,22 +1976,22 @@
   },
   {
    "date": "2026-10-29",
-   "count": 2,
+   "count": 59,
    "weekday": 4
   },
   {
    "date": "2026-10-30",
-   "count": 0,
+   "count": 72,
    "weekday": 5
   },
   {
    "date": "2026-10-31",
-   "count": 0,
+   "count": 92,
    "weekday": 6
   },
   {
    "date": "2026-11-01",
-   "count": 0,
+   "count": 16,
    "weekday": 0
   },
   {
@@ -1988,12 +2001,12 @@
   },
   {
    "date": "2026-11-03",
-   "count": 0,
+   "count": 47,
    "weekday": 2
   },
   {
    "date": "2026-11-04",
-   "count": 0,
+   "count": 18,
    "weekday": 3
   },
   {
@@ -2003,12 +2016,12 @@
   },
   {
    "date": "2026-11-06",
-   "count": 0,
+   "count": 17,
    "weekday": 5
   },
   {
    "date": "2026-11-07",
-   "count": 7,
+   "count": 8,
    "weekday": 6
   },
   {
@@ -2023,12 +2036,12 @@
   },
   {
    "date": "2026-11-10",
-   "count": 0,
+   "count": 9,
    "weekday": 2
   },
   {
    "date": "2026-11-11",
-   "count": 0,
+   "count": 4,
    "weekday": 3
   },
   {
@@ -2038,71 +2051,71 @@
   },
   {
    "date": "2026-11-13",
-   "count": 0,
+   "count": 2,
    "weekday": 5
   }
  ],
- "activeWeeks": 25,
+ "activeWeeks": 26,
  "weekCount": 53,
- "current": 0,
+ "current": 1,
  "longest": 8,
  "languages": [
   {
    "name": "Java",
-   "size": 860489,
+   "size": 2558273,
    "color": "#b07219",
-   "pct": 37.95710109024951
+   "pct": 53.01699367697859
+  },
+  {
+   "name": "TypeScript",
+   "size": 1000173,
+   "color": "#3178c6",
+   "pct": 20.727328794419016
+  },
+  {
+   "name": "Python",
+   "size": 479699,
+   "color": "#3572A5",
+   "pct": 9.94115907483406
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 18.635123713941397
-  },
-  {
-   "name": "TypeScript",
-   "size": 367067,
-   "color": "#3178c6",
-   "pct": 16.191722643630094
-  },
-  {
-   "name": "Python",
-   "size": 268057,
-   "color": "#3572A5",
-   "pct": 11.824284385911978
+   "pct": 8.754931991926858
   },
   {
    "name": "JavaScript",
-   "size": 251251,
+   "size": 257361,
    "color": "#f1e05a",
-   "pct": 11.0829535369148
+   "pct": 5.333483373236902
   },
   {
    "name": "CSS",
-   "size": 78077,
+   "size": 82526,
    "color": "#663399",
-   "pct": 3.444060972102387
+   "pct": 1.7102476632424826
   },
   {
    "name": "HTML",
    "size": 14793,
    "color": "#e34c26",
-   "pct": 0.652535240343643
+   "pct": 0.30656633887921436
   },
   {
    "name": "Dockerfile",
-   "size": 4107,
+   "size": 9395,
    "color": "#384d54",
-   "pct": 0.1811642149727129
+   "pct": 0.194699570997784
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.03105420193347696
+   "pct": 0.014589515485092063
   }
  ],
- "langBytes": 2267004,
+ "langBytes": 4825383,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

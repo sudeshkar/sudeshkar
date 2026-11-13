@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://portfolio-v3-chi-cyan.vercel.app/"><b>Portfolio</b></a>
+  <a href="https://sudeshkar.tech"><b>Portfolio</b></a>
   &emsp;
   <a href="https://portfolio-v3-chi-cyan.vercel.app/systems"><b>System design labs</b></a>
   &emsp;

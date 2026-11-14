@@ -1,13 +1,13 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-14T06:19:33.261Z",
+ "generatedAt": "2026-11-14T17:59:12.319Z",
  "followers": 2,
  "repoCount": 22,
  "stars": 0,
  "forks": 0,
  "mergedPRs": 16,
- "selfMergedPRs": 95,
+ "selfMergedPRs": 99,
  "externalMergedPRs": 16,
  "externalPRs": [
   {
@@ -220,12 +220,12 @@
   }
  ],
  "contributedRepos": 26,
- "lifetime": 589,
- "lifetimeCommits": 418,
+ "lifetime": 604,
+ "lifetimeCommits": 429,
  "year": {
-  "total": 537,
-  "commits": 375,
-  "prs": 128,
+  "total": 552,
+  "commits": 386,
+  "prs": 132,
   "reviews": 0
  },
  "days": [
@@ -2036,12 +2036,12 @@
   },
   {
    "date": "2026-11-11",
-   "count": 4,
+   "count": 7,
    "weekday": 3
   },
   {
    "date": "2026-11-12",
-   "count": 0,
+   "count": 1,
    "weekday": 4
   },
   {
@@ -2051,71 +2051,77 @@
   },
   {
    "date": "2026-11-14",
-   "count": 0,
+   "count": 11,
    "weekday": 6
   }
  ],
  "activeWeeks": 26,
  "weekCount": 53,
- "current": 1,
+ "current": 5,
  "longest": 8,
  "languages": [
   {
    "name": "Java",
-   "size": 2558273,
+   "size": 2626912,
    "color": "#b07219",
-   "pct": 53.01699367697859
+   "pct": 53.57578872443746
   },
   {
    "name": "TypeScript",
    "size": 1000173,
    "color": "#3178c6",
-   "pct": 20.727328794419016
+   "pct": 20.39849729868636
   },
   {
    "name": "Python",
-   "size": 479699,
+   "size": 484189,
    "color": "#3572A5",
-   "pct": 9.94115907483406
+   "pct": 9.875019630157633
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 8.754931991926858
+   "pct": 8.616038195697886
   },
   {
    "name": "JavaScript",
    "size": 257361,
    "color": "#f1e05a",
-   "pct": 5.333483373236902
+   "pct": 5.24886960884489
   },
   {
    "name": "CSS",
    "size": 82526,
    "color": "#663399",
-   "pct": 1.7102476632424826
+   "pct": 1.6831152091402093
   },
   {
    "name": "HTML",
    "size": 14793,
    "color": "#e34c26",
-   "pct": 0.30656633887921436
+   "pct": 0.3017027759592264
   },
   {
    "name": "Dockerfile",
    "size": 9395,
    "color": "#384d54",
-   "pct": 0.194699570997784
+   "pct": 0.19161073346426902
+  },
+  {
+   "name": "Shell",
+   "size": 4658,
+   "color": "#89e051",
+   "pct": 0.09499976545785686
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.014589515485092063
+   "pct": 0.014358058154214518
   }
  ],
- "langBytes": 4825383,
+ "langBytes": 4903170,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]

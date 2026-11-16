@@ -43,7 +43,7 @@
 </g>
 <g class="in" style="animation-delay:0.36s">
   <rect x="592.6" y="40" width="1" height="104" fill="#2d2925"/>
-  <text class="display" x="615.6" y="98" font-size="62" letter-spacing="-1" fill="#ffffff">26</text>
+  <text class="display" x="615.6" y="98" font-size="62" letter-spacing="-1" fill="#ffffff">25</text>
   <text class="semibold" x="615.6" y="122" font-size="14" fill="#faf6ef">active weeks</text>
   <text class="regular" x="615.6" y="141" font-size="12.5" fill="#a8a29b">out of the last 53</text>
 </g>

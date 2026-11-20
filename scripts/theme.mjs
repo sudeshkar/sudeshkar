@@ -34,10 +34,12 @@ export const THEMES = {
   },
 }
 
+// A deep blue drawn from the monogram tile (#2e54fe), so the snake in the
+// surname sits in its own colour family; the peach name is its complement.
 export const FIELD = {
-  edge: '#2b1710',
-  mid: '#3d2014',
-  glow: '#7a4128',
+  edge: '#070e33',
+  mid: '#0e1d63',
+  glow: '#2843c9',
   peach: '#efbfa3',
   paper: '#faf6ef',
   bone: '#ffffff',

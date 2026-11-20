@@ -2,40 +2,40 @@ import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// The same tokens as the portfolio (portfolio-v4/src/index.css), so the profile and
-// the site read as one identity: warm paper, a peach name, a dark terracotta field.
-// Two palettes so the README can serve a real light and dark asset through <picture>.
+// The blue of the snake monogram (#2e54fe) runs through the whole page: the
+// header field, these cards and the calendar ramp, with the peach of the name as
+// the accent where the field is dark. Every text colour keeps at least 4.5:1
+// against its card. Two palettes so the README can serve a real light and dark
+// asset through <picture>.
 export const THEMES = {
   dark: {
     id: 'dark',
-    paper: '#151413',
-    ink: '#faf6ef',
+    paper: '#070e33',
+    ink: '#e8ecff',
     inkStrong: '#ffffff',
-    muted: '#a8a29b',
-    rule: '#2d2925',
-    ruleStrong: '#4d4640',
+    muted: '#9aa6d6',
+    rule: '#18235e',
+    ruleStrong: '#2b3a8f',
     accent: '#efbfa3',
-    accentDeep: '#ee8f63',
-    empty: '#231f1b',
-    ramp: ['#54301f', '#935436', '#ee8f63', '#efbfa3'],
+    accentDeep: '#2e54fe',
+    empty: '#0f1a4d',
+    ramp: ['#1a2c8a', '#2443d6', '#5a78ff', '#a9b8ff'],
   },
   light: {
     id: 'light',
-    paper: '#faf6ef',
-    ink: '#151413',
-    inkStrong: '#000000',
-    muted: '#6b655f',
-    rule: '#e4dccf',
-    ruleStrong: '#c4b9a8',
-    accent: '#b9552a',
-    accentDeep: '#7a4128',
-    empty: '#f1eadf',
-    ramp: ['#f6d9c7', '#efbfa3', '#ee8f63', '#b9552a'],
+    paper: '#f4f6ff',
+    ink: '#0b1240',
+    inkStrong: '#050a2a',
+    muted: '#4f5a85',
+    rule: '#dde2f7',
+    ruleStrong: '#b7c1ea',
+    accent: '#2e54fe',
+    accentDeep: '#1a2f9e',
+    empty: '#e3e8fb',
+    ramp: ['#c3cdff', '#8ea2ff', '#4d6bff', '#2440d0'],
   },
 }
 
-// A deep blue drawn from the monogram tile (#2e54fe), so the snake in the
-// surname sits in its own colour family; the peach name is its complement.
 export const FIELD = {
   edge: '#070e33',
   mid: '#0e1d63',

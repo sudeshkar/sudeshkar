@@ -196,7 +196,7 @@ Internal workspace tooling in Blazor .NET WebAssembly with MVVM, from the compon
 **Open Source Contributor**, OpenMRS
 <br><sub>January 2026 to now</sub>
 
-Fifteen merged pull requests across ten repositories, from the Java core to the O3 React micro-frontends: lab orders, dashboards, medication forms, patient charts, login and the security-scanning dashboard.
+Seventeen merged pull requests across ten repositories, from the Java core to the O3 React micro-frontends: lab orders, dashboards, medication forms, patient charts, login and the security-scanning dashboard.
 
 **BSc (Hons) Computing in Software Engineering, Second Class Upper**, Cardiff Metropolitan University
 <br><sub>Completed November 2025, graduated February 2026</sub>

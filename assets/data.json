@@ -1,15 +1,28 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-20T07:12:18.563Z",
+ "generatedAt": "2026-11-20T19:20:23.458Z",
  "followers": 2,
  "repoCount": 22,
  "stars": 0,
  "forks": 0,
- "mergedPRs": 16,
+ "mergedPRs": 17,
  "selfMergedPRs": 100,
- "externalMergedPRs": 16,
+ "externalMergedPRs": 17,
  "externalPRs": [
+  {
+   "number": 687,
+   "title": "(fix) O3-6177: Print Stock Card and Print Bin Card open an empty modal",
+   "url": "https://github.com/openmrs/openmrs-esm-stock-management-app/pull/687",
+   "mergedAt": "2026-11-20T17:58:59Z",
+   "repository": {
+    "nameWithOwner": "openmrs/openmrs-esm-stock-management-app",
+    "isPrivate": false,
+    "owner": {
+     "login": "openmrs"
+    }
+   }
+  },
   {
    "number": 436,
    "title": "(fix) O3-6128: Show metadata export build times correctly in non-UTC timezones",
@@ -220,11 +233,11 @@
   }
  ],
  "contributedRepos": 26,
- "lifetime": 606,
- "lifetimeCommits": 431,
+ "lifetime": 607,
+ "lifetimeCommits": 432,
  "year": {
-  "total": 553,
-  "commits": 388,
+  "total": 554,
+  "commits": 389,
   "prs": 132,
   "reviews": 0
  },
@@ -2051,13 +2064,13 @@
   },
   {
    "date": "2026-11-20",
-   "count": 0,
+   "count": 1,
    "weekday": 5
   }
  ],
- "activeWeeks": 25,
+ "activeWeeks": 26,
  "weekCount": 53,
- "current": 0,
+ "current": 1,
  "longest": 8,
  "languages": [
   {

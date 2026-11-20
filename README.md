@@ -35,7 +35,7 @@
 
 I spend most of my day on the server side: **Java 21 and Spring Boot**, **C# and ASP.NET Core**, and the **React and TypeScript** interfaces that sit on top of them. I'm a Full Stack Developer Trainee at **Variosystems**, building internal business tooling in Blazor WebAssembly, and I hold a BSc (Hons) Computing in Software Engineering, Second Class Upper, from **Cardiff Metropolitan University** (completed November 2025, graduated February 2026).
 
-Outside work I fix things in **[OpenMRS](https://openmrs.org)**, the open-source medical record system that health services in more than 40 countries run on. Fifteen of those changes have been merged so far.
+Outside work I fix things in **[OpenMRS](https://openmrs.org)**, the open-source medical record system that health services in more than 40 countries run on. Seventeen of those changes have been merged so far.
 
 My focus is **system design**, which I learn by building. Transactional outboxes, idempotency, optimistic locking and rate limiting are already in my projects. Right now I'm learning how load balancers work with Nginx: algorithms like round robin, and where one belongs, L7 when routing needs intelligence and L4 when it needs speed. You can try [a live load balancer and rate limiter](https://portfolio-v3-chi-cyan.vercel.app/systems) on my portfolio.
 
@@ -57,6 +57,8 @@ Every change below went through OpenMRS code review and was merged upstream. New
 
 | Merged | Pull request | What changed |
 | :--- | :--- | :--- |
+| Nov 2026 | [`stock-management` #687](https://github.com/openmrs/openmrs-esm-stock-management-app/pull/687) | Print Stock Card and Print Bin Card open a real preview instead of an empty modal, with an error state if it fails |
+| Nov 2026 | [`admin-tools` #436](https://github.com/openmrs/openmrs-esm-admin-tools/pull/436) | Metadata export build times are right in browsers outside UTC, not shifted by the timezone offset |
 | Nov 2026 | [`laboratory` #879](https://github.com/openmrs/openmrs-esm-laboratory-app/pull/879) | The lab worklist shows an error state when orders fail to load, instead of an empty table |
 | Oct 2026 | [`cvss-scanning` #92](https://github.com/openmrs/openmrs-contrib-cvss-scanning/pull/92) | The security dashboard gets the Carbon footer |
 | Oct 2026 | [`cvss-scanning` #91](https://github.com/openmrs/openmrs-contrib-cvss-scanning/pull/91) | The security dashboard gets the Carbon top navigation bar |

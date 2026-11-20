@@ -16,7 +16,7 @@
 <p align="center">
   <a href="https://sudeshkar.tech"><b>Portfolio</b></a>
   &emsp;
-  <a href="https://portfolio-v3-chi-cyan.vercel.app/systems"><b>System design labs</b></a>
+  <a href="https://sudeshkar.tech/systems"><b>System design labs</b></a>
   &emsp;
   <a href="https://www.linkedin.com/in/sathieskumar-sudeshkar"><b>LinkedIn</b></a>
   &emsp;
@@ -24,7 +24,7 @@
   &emsp;
   <a href="https://medium.com/@sudeshkar008sk"><b>Medium</b></a>
   &emsp;
-  <a href="https://portfolio-v3-chi-cyan.vercel.app/Sathieskumar_Sudeshkar_CV.pdf"><b>CV</b></a>
+  <a href="https://sudeshkar.tech/Sathieskumar_Sudeshkar_CV.pdf"><b>CV</b></a>
   &emsp;
   <a href="https://leetcode.com/u/sudeshkar/">LeetCode</a>
   &emsp;
@@ -37,7 +37,7 @@ I spend most of my day on the server side: **Java 21 and Spring Boot**, **C# and
 
 Outside work I fix things in **[OpenMRS](https://openmrs.org)**, the open-source medical record system that health services in more than 40 countries run on. Seventeen of those changes have been merged so far.
 
-My focus is **system design**, which I learn by building. Transactional outboxes, idempotency, optimistic locking and rate limiting are already in my projects. Right now I'm learning how load balancers work with Nginx: algorithms like round robin, and where one belongs, L7 when routing needs intelligence and L4 when it needs speed. You can try [a live load balancer and rate limiter](https://portfolio-v3-chi-cyan.vercel.app/systems) on my portfolio.
+My focus is **system design**, which I learn by building. Transactional outboxes, idempotency, optimistic locking and rate limiting are already in my projects. Right now I'm learning how load balancers work with Nginx: algorithms like round robin, and where one belongs, L7 when routing needs intelligence and L4 when it needs speed. You can try [a live load balancer and rate limiter](https://sudeshkar.tech/systems) on my portfolio.
 
 I use Claude Code and agents to code efficiently, and I've been exploring Jev and [DeepSeek's super agent prototype](https://github.com/deepseek-ai/dsh-superagent-prototype).
 

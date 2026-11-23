@@ -1,13 +1,13 @@
 {
  "login": "sudeshkar",
  "name": "Sathieskumar Sudeshkar",
- "generatedAt": "2026-11-23T07:35:05.162Z",
+ "generatedAt": "2026-11-23T23:51:31.795Z",
  "followers": 2,
  "repoCount": 22,
  "stars": 0,
  "forks": 0,
  "mergedPRs": 17,
- "selfMergedPRs": 100,
+ "selfMergedPRs": 106,
  "externalMergedPRs": 17,
  "externalPRs": [
   {
@@ -233,12 +233,12 @@
   }
  ],
  "contributedRepos": 26,
- "lifetime": 613,
- "lifetimeCommits": 438,
+ "lifetime": 633,
+ "lifetimeCommits": 452,
  "year": {
-  "total": 560,
-  "commits": 395,
-  "prs": 132,
+  "total": 580,
+  "commits": 409,
+  "prs": 138,
   "reviews": 0
  },
  "days": [
@@ -2064,77 +2064,77 @@
   },
   {
    "date": "2026-11-23",
-   "count": 0,
+   "count": 20,
    "weekday": 1
   }
  ],
- "activeWeeks": 26,
+ "activeWeeks": 27,
  "weekCount": 53,
- "current": 0,
+ "current": 1,
  "longest": 8,
  "languages": [
   {
    "name": "Java",
    "size": 2626912,
    "color": "#b07219",
-   "pct": 53.20142771735345
+   "pct": 51.07708796014182
   },
   {
    "name": "TypeScript",
-   "size": 1000173,
+   "size": 1031425,
    "color": "#3178c6",
-   "pct": 20.255962728994554
+   "pct": 20.05479644894434
   },
   {
    "name": "Python",
-   "size": 516203,
+   "size": 690313,
    "color": "#3572A5",
-   "pct": 10.454380120834273
+   "pct": 13.422291200097064
   },
   {
    "name": "C#",
    "size": 422459,
    "color": "#7355dd",
-   "pct": 8.55583359931563
+   "pct": 8.214198078410526
   },
   {
    "name": "JavaScript",
    "size": 259849,
    "color": "#f1e05a",
-   "pct": 5.262581232613264
+   "pct": 5.052445696450772
   },
   {
    "name": "CSS",
    "size": 82526,
    "color": "#663399",
-   "pct": 1.6713544358556014
+   "pct": 1.6046170412250822
   },
   {
    "name": "HTML",
    "size": 14793,
    "color": "#e34c26",
-   "pct": 0.29959462677958354
+   "pct": 0.28763177532950396
   },
   {
    "name": "Dockerfile",
    "size": 9395,
    "color": "#384d54",
-   "pct": 0.190271852808368
+   "pct": 0.1826742735902582
   },
   {
    "name": "Shell",
    "size": 4658,
    "color": "#89e051",
-   "pct": 0.09433595427156764
+   "pct": 0.09056910765124243
   },
   {
    "name": "Mako",
    "size": 704,
    "color": "#7e858d",
-   "pct": 0.014257731173719115
+   "pct": 0.013688418159397742
   }
  ],
- "langBytes": 4937672,
+ "langBytes": 5143034,
  "excludedLanguages": [
   "Jupyter Notebook"
  ]
